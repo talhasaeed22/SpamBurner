@@ -1,0 +1,16 @@
+.featuresContainer{
+    padding: 23px 115px;
+    height: 90vh;
+}
+.primaryHeading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.primarySpan{
+    color: #777385;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.featuresItem{
+    gap:45px
+}

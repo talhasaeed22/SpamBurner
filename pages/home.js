@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home/Home.module.css'
 import FeatureBox from '../Components/FeatureBox'
 import previewPic from '../public/Images/Feature2.png'
 import leaderDashboard from '../public/Images/Screenshot.png'
-import goodLeads from '../public/Images/Feature 3.png'
+import goodLeads from '../public/Images/Screenshot_1.png'
 import Slider from '../Components/Slider'
 import SpamCounter from '../Components/SpamCounter'
 import spanSubmission from '../public/Images/43-Spam-Submission.gif'
@@ -11,14 +11,15 @@ import screenshot from '../public/Images/Screenshot_2.png'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
 import Comparison from '../Components/Comparison'
-import PreFooter from '../Components/PreFooter'
 import Features from '../Components/Features'
+import PreFooter from '../Components/PreFooter'
+import Footer from '../Components/Footer'
 const home = () => {
   return (
     <>
       <div className='mt-5'>
         
-        <FeatureBox heading="Say Goodbye to Website Spam Forever" para="Focus on real customers by cutting out spam website submissions for good and manage your leads in one dashboard." bgButton={true} points={[]} animatedBoxes={true} source={previewPic} reverse={false} primaryHeading="" secondPara=""/>
+        <FeatureBox heading="Say Goodbye to Website Spam Forever" para="Focus on real customers by cutting out spam website submissions for good and manage your leads in one dashboard." bgButton={true} points={[]} animatedBoxes={true} source={previewPic} reverse={false} primaryHeading="" secondPara="" />
       </div>
 
       <div className={styles.spanHeading}>
@@ -68,10 +69,11 @@ const home = () => {
           <span className=''>of all website spam, but custom filters give you maximum flexibility</span>
         </div>
       </div>
-
-      <div className='mt-5 container'>
         <PreFooter/>
-      </div>
+
+      
+        <Footer/>
+      
     </>
   )
 }

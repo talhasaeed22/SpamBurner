@@ -1,0 +1,38 @@
+.heading{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+.footercontainer{
+    margin-top: 8rem;
+    height: 80vh;
+    background-image: url('/Images/CTA Background.png');
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    overflow-y: hidden;
+}
+.footerInner{
+    padding: 110px 0px;
+    /* position: relative;
+    top: 35%; */
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 70px 20px;
+}
+.left h2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: white;
+}
+.left span{
+    color: #bfbfbf;
+    
+    font-size: 17px;
+    font-weight: 500;
+    
+}

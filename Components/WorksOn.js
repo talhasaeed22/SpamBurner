@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Styles/WorksOn.module.css'
+import styles from '../Styles/Home/WorksOn.module.css'
 import Image from 'next/future/image'
 import logo from '../public/Images/Brand/SpamburnerIcon.svg'
 import anyWebsitelogo1 from '../public/Images/AnyWebsite/any website logo.svg'

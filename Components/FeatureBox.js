@@ -1,14 +1,15 @@
 import React from 'react'
 import Image from 'next/future/image'
-import styles from '../styles/Preview.module.css'
+import styles from '../styles/Home/Preview.module.css'
 import goodLeads from '../public/Images/Good Leads.svg'
 import websiteLeads from '../public/Images/Website Leads.svg'
 import SpamLeads from '../public/Images/Spam Leads.svg'
-const FeatureBox = ({ heading, para, points, bgButton, animatedBoxes, source, reverse, primaryHeading, secondPara }) => {
+
+const FeatureBox = ({ heading, para, points, bgButton, animatedBoxes, source, reverse, primaryHeading, secondPara, biggerHeading }) => {
     return (
         <>
             <div className={`container-fluid ${styles.prevContainer} d-flex ${reverse && 'flex-row-reverse'} justify-content-between gap-5 `}>
-                <div className={`${styles.left} w-50 d-flex flex-column gap-3`}>
+                <div className={`${styles.left} ${biggerHeading ? 'w-75' : 'w-50'} ${biggerHeading && 'py-2'} d-flex flex-column gap-3`}>
                     <h3 className='text-muted fs-4'>{primaryHeading}</h3>
                     <h1 className={styles.pHeading}>{heading}</h1>
                     <p className={`text-muted ${styles.para}`}>{para}</p>
@@ -22,9 +23,9 @@ const FeatureBox = ({ heading, para, points, bgButton, animatedBoxes, source, re
 
                         </div>
                     }
-                    {bgButton ? <button className={styles.prevButton}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button> : <button className={styles.simpleButton}>Get Started <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>}
+                    {bgButton ? <button className={styles.prevButton}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button> : <button className={`${styles.simpleButton} ${points.length === 0 && 'text-start'} `}>Get Started <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>}
                 </div>
-                <div className="right w-100">
+                <div className={`right w-100`}>
                     <Image className='img-fluid' src={source} alt="" />
                     {animatedBoxes && <div className={styles.boxes}>
                         <div className={styles.box} id={styles.box1}>

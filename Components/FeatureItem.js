@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/future/image'
-import styles from '../styles/Features.module.css'
+import styles from '../styles/Home/Features.module.css'
 const FeatureItem = ({source, heading, para}) => {
   return (
     <>

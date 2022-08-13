@@ -1,6 +1,6 @@
 import React from 'react'
 import FeatureItem from './FeatureItem'
-import styles from '../styles/Features.module.css'
+import styles from '../styles/Home/Features.module.css'
 import feature1 from '../public/Images/Features/Lead Manager.svg'
 import feature2 from '../public/Images/Features/Customize Filter.svg'
 import feature3 from '../public/Images/Features/Form Submissions.svg'

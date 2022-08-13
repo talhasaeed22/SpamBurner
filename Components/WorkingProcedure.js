@@ -3,7 +3,7 @@ import step from '../public/Images/Step .svg'
 import step3 from '../public/Images/Step _1.svg'
 import step2 from '../public/Images/Brand/SpamburnerIcon.svg'
 import stepgif from '../public/Images/Step.gif'
-import styles from '../styles/WorkingProcedure.module.css'
+import styles from '../styles/Home/WorkingProcedure.module.css'
 import Image from 'next/future/image'
 
 const WorkingProcedure = () => {

@@ -70,10 +70,6 @@ const home = () => {
         </div>
       </div>
         <PreFooter/>
-
-      
-        <Footer/>
-      
     </>
   )
 }

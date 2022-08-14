@@ -1,0 +1,25 @@
+.pic{
+    width: 800px;
+    height: 534px;
+}
+
+.rightArrow{
+    display: block;
+    position: relative;
+    top: -521px;
+    right: -95%;
+    width: 10%;
+    padding: 18% 28px;
+    background: white;
+}
+.leftArrow{
+    position:relative;
+    left: -4%; 
+    top: 244px; 
+    width:fit-content
+}
+.leftArrow i , .rightArrow i{
+    font-size: 37px;
+    color: #c0c0c0;
+    font-weight: normal;
+}

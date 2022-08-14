@@ -128,12 +128,6 @@ const dashboard = () => {
       </div>
 
       <PreFooter/>
-
-      
-        <Footer/>
-      
-
-
     </>
   )
 }

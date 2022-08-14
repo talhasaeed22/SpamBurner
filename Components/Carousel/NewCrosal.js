@@ -7,15 +7,18 @@ import slider4 from '../../public/Images/Slider/Slider_3.png'
 import slider5 from '../../public/Images/Slider/Slider_4.png'
 import slider6 from '../../public/Images/Slider/Slider_5.png'
 import Image from "next/future/image";
+import styles from './Carousel.module.css'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      className={ className}
+      
       onClick={onClick}
-    />
+    >
+      <i style={{fontSize: '37px', color: '#c0c0c0'}} className="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
   );
 }
 
@@ -24,9 +27,11 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      
       onClick={onClick}
-    />
+    >
+      <i style={{fontSize: '37px', color: '#c0c0c0'}} className="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
   );
 }
 
@@ -34,7 +39,9 @@ export default class NewCrosal extends Component {
     render() {
       const settings = {
         className: "slider variable-width",
-        dots: true,
+        dots: false,
+        focusOnSelect: false,
+        speed:1000,
         infinite: true,
         // centerMode: true,
         slidesToShow: 1,

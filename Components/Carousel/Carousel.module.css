@@ -3,7 +3,7 @@
     height: 534px;
 }
 
-.rightArrow{
+/* .rightArrow{
     display: block;
     position: relative;
     top: -521px;
@@ -17,7 +17,7 @@
     left: -4%; 
     top: 244px; 
     width:fit-content
-}
+} */
 .leftArrow i , .rightArrow i{
     font-size: 37px;
     color: #c0c0c0;

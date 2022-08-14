@@ -69,7 +69,8 @@ const home = () => {
           <span className=''>of all website spam, but custom filters give you maximum flexibility</span>
         </div>
       </div>
-        <PreFooter/>
+
+      <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara=""/>
     </>
   )
 }

@@ -1,0 +1,101 @@
+.contactContainer{
+    padding: 23px 205px;
+    display: flex;
+    background: transparent linear-gradient(0deg,#fff 0%,rgba(251,252,255,.9) 18%,rgba(246,247,255,.72) 56%,rgba(242,245,255,.6) 84%,rgba(241,244,255,.56) 100%) 0% 0% no-repeat;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+.pHeading{
+    font-size: xxx-large;
+    font-weight: 700;
+    color: black;
+}
+.secHead{
+    font-size: 19px;
+    font-weight: 400;
+    color:'#777385'
+}
+.lower{
+    padding-top: 43px;
+    display: flex;
+    gap: 23px;
+    /* padding: 23px 30px; */
+    width: 75%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.lower h4{
+    font-size: medium;
+    font-weight: bold;
+}
+.lower span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.lower i{
+    font-size: 14px;
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 23px;
+}
+
+.form{
+    background-color: white;
+    box-shadow: 0px 7px 10px 0px rgb(15 22 63 / 10%);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px 20px 20px 20px;
+}
+.form label{
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #271d33;
+}
+.form input{
+    background-color: #fff;
+    border-color: #b3b3b3;
+    border-radius: 7px 7px 7px 7px;
+    border: 1px solid #818a91;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    min-height: 48px;
+    color: #777385;
+    font-weight: 500;
+}
+.form textarea{
+    background-color: #fff;
+    border-color: #b3b3b3;
+    border-radius: 7px 7px 7px 7px;
+    
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    color: #777385;
+    font-weight: 500;
+    resize: none 
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form input[type=number] {
+  -moz-appearance: textfield;
+}
+.input:focus{
+    outline: none;
+}
+.form textarea{
+    outline: none;
+}

@@ -1,0 +1,14 @@
+.pHeading{
+    font-size: xx-large;
+    color:black;
+    font-weight: 900;
+}
+.blogPostContainer p{
+    color: gray;
+    font-size: 18px;
+}
+.secHeading{
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+}

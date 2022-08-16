@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from '../styles/Footer.module.css'
 import buttonStyles from '../styles/Home/Preview.module.css'
+import { useRouter } from 'next/router'
+
 
 const Footer = () => {
+    const router = useRouter();
     return (
         <>
             <div className={`contianer-fluid ${styles.mainContainer}`}>
@@ -11,24 +14,24 @@ const Footer = () => {
                         <div className={styles.col}>
                             {/* <Image src={whiteText} className={'img-fluid'} width={130} /> */}
                             <span className={styles.heading}>Spamburner™</span>
-                            <span className={styles.items}>Home</span>
-                            <span className={styles.items}>The Dashboard</span>
-                            <span className={styles.items}>Features</span>
-                            <span className={styles.items}>How it Works</span>
+                            <span className={styles.items} onClick={()=>{router.push('/home')}}>Home</span>
+                            <span className={styles.items} onClick={()=>{router.push('/the-dashboard')}}>The Dashboard</span>
+                            <span className={styles.items} onClick={()=>{router.push('/features')}}>Features</span>
+                            <span className={styles.items} onClick={()=>{router.push('/how-it-works')}}>How it Works</span>
                             <span className={styles.items}>Pricing</span>
                         </div>
                         <div className={styles.col}>
                             <span className={styles.heading}>Resources</span>
-                            <span className={styles.items}>Enterprise</span>
-                            <span className={styles.items}>Blog</span>
-                            <span className={styles.items}>FAQs</span>
+                            <span className={styles.items} onClick={()=>{router.push('/branding-resources')}}>Enterprise</span>
+                            <span className={styles.items} onClick={()=>{router.push('/home')}}>Blog</span>
+                            <span className={styles.items} onClick={()=>{router.push('/home')}}>FAQs</span>
                             
                         </div>
                         <div className={styles.col}>
                             <span className={styles.heading}>Company</span>
                             <span className={styles.items}>Schedule Dem</span>
                             <span className={styles.items}>About</span>
-                            <span className={styles.items}>Contact us</span>
+                            <span className={styles.items} onClick={()=>{router.push('/contact-us')}}>Contact us</span>
                             
                         </div>
                     </div>

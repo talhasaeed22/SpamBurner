@@ -1,6 +1,9 @@
 .navContainer{
-    height: 9vh;
+    height: 12vh;
     padding: 0 135px;
+    /* position: fixed;
+    top: 0;
+    z-index: 100000; */
 }
 .brandHeading{
     font-size: 1.7rem;

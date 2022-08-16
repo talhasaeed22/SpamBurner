@@ -1,10 +1,13 @@
 .mainContainer{
     background-image: radial-gradient(at center center,#611fe9 0%,#210560 83%);
-    height: 160vh;
+    height: 170vh;
     text-align: center;
-    padding: 75px 0px;
+    padding: 165px 0px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -109px;
+    z-index: -1;
 }
 .mainContainer h1{
     font-weight: 700;

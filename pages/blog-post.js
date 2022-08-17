@@ -4,10 +4,14 @@ import sample from '../public/Images/bigstock/bigstock-Salesman-In-Red-Shirt-And
 import iconStyles from '../styles/BlogItem.module.css';
 import styles from '../styles/BlogPost.module.css'
 import PreFooter from '../Components/PreFooter';
-
+import BlogPostCard from '../Components/BlogPostCard';
+import sample1 from '../public/Images/bigstock/bigstock--207916777.jpg'
+import sample2 from '../public/Images/bigstock/bigstock-Young-woman-using-digital-tabl-294797038.jpg'
+import sample3 from '../public/Images/bigstock/bigstock-Startup-Small-Business-Owner-W-364891720.jpg'
 const blogPost = () => {
   return (
     <>
+      <div className={styles.mainContainer}>
       <div className={`container d-flex flex-column w-50 gap-4 ${styles.blogPostContainer} `}>
         <Image src={sample} className="img-fluid  " />
         <span style={{color:'#6f4ab8', fontSize:'22px'}}>blog article</span>
@@ -40,6 +44,16 @@ const blogPost = () => {
         <hr />
       </div>
 
+      <div className="container" style={{marginTop:'9%'}}>
+        <h1 className={`${styles.pHeading} text-center pb-3`}>Related BLog</h1>
+        <div className='d-flex justify-content-between'>
+          <BlogPostCard heading={'Microlearning in retail: How two retail organizations successfully employed microlearning for their frontline teams'} source={sample1}/>
+          <BlogPostCard heading={"Is your talent ready for the new 'phygital' era in retail?"} source={sample2}/>
+          <BlogPostCard heading={'Covid-19: How Businesses Should Handle the Coronavirus Pandemic?'} source={sample3}/>
+        </div>
+      </div>
+
+      </div>
       <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara=""/>
     </>
   )

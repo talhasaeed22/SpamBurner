@@ -1,0 +1,48 @@
+.pHeading{
+    font-size: xxx-large;
+    color:black;
+    font-weight: 700;
+}
+.secHeading{
+    font-size: 15px;
+    font-weight: 500;
+}
+.mainDiv{
+    width: 60%;
+}
+.mainHeading {
+    display: flex;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(236, 230, 230);
+}
+
+.mainHeading:first-child {
+    margin-top: 0;
+}
+
+.mainHeading h3 {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #303243;
+    font-size: 18px;
+}
+
+.mainHeading p {
+    cursor: pointer;
+}
+.mainHeading i{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.answers {
+    padding: 12px 20px 12px 20px;
+    width: 90%;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    word-spacing: 2px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(40, 37, 53);
+}

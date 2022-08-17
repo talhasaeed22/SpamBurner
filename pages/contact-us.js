@@ -48,14 +48,14 @@ const contact = () => {
               <input className={styles.input} type="text" name="name" id="name" placeholder='Name' />
             </div>
 
-            <div className='d-flex justify-content-between my-4' style={{gap:'30px'}}>
+            <div className={`d-flex justify-content-between my-4 ${styles.inputFields}`} style={{gap:'30px'}}>
 
-              <div className='d-flex flex-column ' style={{width:'70%'}}>
+              <div className='d-flex flex-column ' >
                 <label htmlFor="email">Email*</label>
                 <input className={styles.input} type="email" name="email" id="email" placeholder='Email' />
               </div>
 
-              <div className='d-flex flex-column' style={{width:'70%'}}>
+              <div className='d-flex flex-column' >
                 <label htmlFor="phone">Phone*</label>
                 <input className={styles.input} type="number" name="phone" id="phone" placeholder='Phone' />
               </div>

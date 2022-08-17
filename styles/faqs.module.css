@@ -46,3 +46,16 @@
     line-height: 1.7;
     color: rgb(40, 37, 53);
 }
+@media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  }
+
+  @media (max-width:530px){
+    .mainDiv{
+        width: 100%;
+    }
+  }
+  

@@ -89,3 +89,9 @@
         padding: 5px;
     }
   }
+  @media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  }

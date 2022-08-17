@@ -99,3 +99,49 @@
 .form textarea{
     outline: none;
 }
+.inputFields div{
+    width:70%
+}
+@media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  }
+
+  @media(max-width:1448px){
+    .contactContainer{
+        padding: 23px 55px;
+
+    }
+  }
+  @media(max-width:1154px){
+    .contactContainer{
+        padding: 23px 15px;
+
+    }.right{
+        
+        width: 80%;
+        
+    }
+    
+  }
+  @media(max-width:904px){
+    .contactContainer{
+        flex-direction: column;
+    }
+    .left{
+        align-items: center;
+    }
+    .right{
+        width: 100%;
+    }
+  }
+  @media(max-width:656px){
+    .inputFields{
+        flex-direction: column;
+    }
+    .inputFields div{
+        width: 100%;
+    }
+  }

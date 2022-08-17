@@ -7,7 +7,7 @@ import MobileNav from "../Components/Nav/MobileNav";
 
 function MyApp({ Component, pageProps }) {
 
-  return <><div className="d-lg-none d-xl-none"><MobileNav /></div> <div className="d-lg-block d-xl-block d-none"><Navbar /></div> <Component {...pageProps} /> <Footer /> </>
+  return <><div className="d-xl-none"><MobileNav /></div> <div className=" d-xl-block d-none"><Navbar /></div> <Component {...pageProps} /> <Footer /> </>
 }
 
 export default MyApp

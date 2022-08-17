@@ -80,3 +80,14 @@
   background-color: white;
   border-radius: 12px;
 }
+.cardItemsContainer{
+  display: flex;
+  
+}
+
+@media (max-width:760px){
+  .pHeading{
+    font-size: xx-large;
+    
+}
+}

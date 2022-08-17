@@ -114,3 +114,9 @@
         flex-direction: column;
     }
   }
+  @media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  }

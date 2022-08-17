@@ -41,3 +41,18 @@
         flex-direction: column;
     }
 }
+@media (max-width:466px){
+    .left h2{
+        font-size: 1.2rem;
+        
+    }
+    .left span{
+        font-size: 12px;
+        
+    }
+    .heading{
+        font-size: 2rem;
+        color: white;
+        font-weight: bolder;
+    }
+}

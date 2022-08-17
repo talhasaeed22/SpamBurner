@@ -14,6 +14,9 @@
 .featuresItem{
     gap:45px
 }
+.featurePageContainer{
+    width: 45%;
+}
 @media (max-width:1300px) {
     .featuresContainer{
         height: auto;
@@ -27,5 +30,13 @@
     .featuresItem{
         flex-direction: column;
         align-items: center;
+    }
+    .featurePageContainer{
+        width: 100%;
+    }
+  }
+  @media(max-width:992px){
+    .carosalContainer{
+        display: none;
     }
   }

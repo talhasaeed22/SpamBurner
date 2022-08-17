@@ -38,7 +38,7 @@ const brandingResources = () => {
             </div>
 
             <div className={`${styles.iconSection} py-5`}>
-                <div style={{ width: '13%' }}>
+                <div className={styles.iconPara}>
                     <h6>Icon</h6>
                     <span>Use in UI with limited space on different background.</span>
                 </div>
@@ -86,11 +86,11 @@ const brandingResources = () => {
 
                     {colorPalette.map((color, index) => {
                         return <>
-                        {(index === 0 || index === 5 || index === 10 || index === 15) && <div className="col-md-1"></div>}
-                        <div key={index} className="col-md-2 p-0">
+                        {(index === 0 || index === 5 || index === 10 || index === 15) && <div key={index} className="col-md-1 d-md-block"></div>}
+                        <div key={index} className="col-md-2 col-6 p-0">
                             <ColourPalette name={color.name} colorCode={color.colorCode} textColor={color.textColor} color1={color.color1} color2={color.color2} gradient={color.gradient} />
                         </div>
-                        {(index === 4 || index === 9 || index=== 14) && <div className="col-md-1"></div>}
+                        {(index === 4 || index === 9 || index=== 14) && <div key={index} className="col-md-1"></div>}
                         </>
                     })}
 

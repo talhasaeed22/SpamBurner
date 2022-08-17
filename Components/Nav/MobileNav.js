@@ -57,7 +57,7 @@ const MobileNav = () => {
         <div className="modal-body">
           <div className={styles.modalLogo}>
             <Image src="/Images/Brand/SpamburnerIcon.svg" alt="" width="45" height="60" className="d-inline-block align-text-top me-2" />
-            <Image src={(router.pathname === '/the-dashboard' && sticky === false) ? '/Images/Brand/SpamButner White text.svg' : '/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="250" height={80} className="d-inline-block align-text-top me-2 mb-lg-0" />
+            <Image src={'/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="250" height={80} className="d-inline-block align-text-top me-2 mb-lg-0" />
           </div>
           <div className={`container ${styles.mobileLi}`}>
             <ul className={`navbar-nav  m-auto mb-2 mb-lg-0 ${styles.mobileli} `}>

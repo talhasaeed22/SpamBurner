@@ -46,7 +46,7 @@ const blogPost = () => {
 
       <div className="container" style={{marginTop:'9%'}}>
         <h1 className={`${styles.pHeading} text-center pb-3`}>Related BLog</h1>
-        <div className='d-flex justify-content-between'>
+        <div className={` ${styles.BlogPostCard} d-flex justify-content-between flex-column flex-md-row `} >
           <BlogPostCard heading={'Microlearning in retail: How two retail organizations successfully employed microlearning for their frontline teams'} source={sample1}/>
           <BlogPostCard heading={"Is your talent ready for the new 'phygital' era in retail?"} source={sample2}/>
           <BlogPostCard heading={'Covid-19: How Businesses Should Handle the Coronavirus Pandemic?'} source={sample3}/>

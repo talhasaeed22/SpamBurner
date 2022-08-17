@@ -9,7 +9,7 @@ const blogIndex = () => {
             <div className={style.mainContainer}>
 
                 <h1 className={style.pHeading}>Blog</h1>
-                <div className="container " style={{ width: '60%' }}>
+                <div className={`container ${style.blogItemContainer} `}>
                     <div className="my-4">
                         <BlogItem image="/Images/bigstock/bigstock-Young-woman-using-digital-tabl-294797038.jpg" heading="l illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit" para="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis " date=" January 21, 2022" seen="1,256" time="5mins" />
                     </div>

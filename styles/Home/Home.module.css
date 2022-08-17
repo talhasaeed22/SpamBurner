@@ -26,3 +26,9 @@
   font-weight: 500;
   color: #777385;
 }
+@media (max-width:760px){
+  .pHeading{
+    font-size: xx-large;
+    
+}
+}

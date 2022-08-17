@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <>
             <nav className={`navbar navbar-expand-lg navbar-light `}>
-                <div className={`container-fluid ${styles.navContainer} n-parent`} style={{ position:sticky && "fixed", top: sticky && '0px', backgroundColor: sticky && 'white', zIndex:sticky && '10000', boxShadow: sticky && '0 3px 5px 0 rgb(0 0 0 / 8%)' }}>
+                <div className={`container-fluid ${styles.navContainer} ${sticky && styles.sticky} n-parent`} >
                     <a id='logo' className=" d-flex align-items-end navbar-brand" href="/home">
                         <Image src="/Images/Brand/SpamburnerIcon.svg" alt="" width="25" height="40" className="d-inline-block align-text-top me-2" />
                         <Image src={(router.pathname === '/the-dashboard' && sticky === false) ? '/Images/Brand/SpamButner White text.svg' : '/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="180" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />

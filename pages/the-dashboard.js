@@ -115,7 +115,7 @@ const dashboard = () => {
         <div className='text-center my-5'>
           <span className={` my-4 fs-1 fw-bold text-dark text-center `} >Loved by 250,000+ companies</span>
         </div>
-        <div className="container-fluid d-flex gap-3">
+        <div className={` ${styles.cardItemsContainer} flex-xxl-row flex-column container-fluid d-flex gap-3`}>
           <div>
             <Card image={client1}/>
           </div>

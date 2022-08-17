@@ -59,9 +59,46 @@
     font-size: large;
     font-weight: bold;
 }
+.iconPara{
+    width: 13%;
+}
 
 /* .brandingIcons{
     border-radius: 45px;
     border: 1px solid red;
     padding: 12px;
 } */
+@media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  .brandingContainer{
+    width: 100%;
+    
+    }
+}
+
+@media (max-width:992px){
+    .middleSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+        width: 90%;
+    }
+    .right{
+        width: 90%;
+    }
+}
+
+@media (max-width:682px){
+    .iconSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconPara{
+        width: 90%;
+        text-align: center;
+    }
+}

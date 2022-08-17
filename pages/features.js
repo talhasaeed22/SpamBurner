@@ -6,10 +6,11 @@ import PreFooter from '../Components/PreFooter'
 import Carousel from '../Components/Carousel/Carousel'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import NewCrosal from '../Components/Carousel/NewCrosal'
+import styles from '../styles/Home/Features.module.css'
 const features = () => {
     return (
         <>
-            <div className='container text-center py-5' style={{ width: '45%' }}>
+            <div className={`container text-center py-5 ${styles.featurePageContainer} `} >
 
                 <h1 className={headingStyles.pHeading}>A powerful tool to control your website submissions.</h1>
                 <div style={{ margin: 'auto', width: '65%' }}>
@@ -21,15 +22,15 @@ const features = () => {
                 <Features />
             </div>
 
-            <div className='container text-center py-5 d-flex flex-column gap-4' style={{ width: '50%' }}>
+            <div className={`container text-center py-5 d-flex flex-column gap-4  ${styles.featurePageContainer}  `}>
 
                 <h1 className={headingStyles.pHeading}>The only comprehensive solution for eliminating website spam.</h1>
                 <span className={"text-muted"}>Easy setup - no technical skills required or hidden costs</span>
                 <button className={`${buttonStyles.prevButton} mx-auto`} style={{width:'fit-content'}}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
             </div>
 
-            <div className="container-fluid">
-            {/* <Carousel/> */}
+            <div className={`container-fluid ${styles.carosalContainer} `}>
+            
             <NewCrosal/>
             </div>
 
@@ -37,7 +38,7 @@ const features = () => {
                 <WorkingProcedure/>
             </div>
 
-            <PreFooter/>
+            <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara=""/>
         </>
     )
 }

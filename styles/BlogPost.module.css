@@ -28,3 +28,20 @@
     box-shadow: 0px 5px 7px 0px rgb(114 114 114 / 25%);
     border-radius: 7px;
 }
+
+@media (max-width:760px){
+    .pHeading{
+      font-size: xx-large;
+      
+  }
+  }
+  @media (max-width:700px){
+    .BlogPostCard{
+        align-items: center;
+        gap: 23px;
+        width: 100%;
+    }
+    .blogPostCardContainer{
+        width: 100%;
+    }
+  }

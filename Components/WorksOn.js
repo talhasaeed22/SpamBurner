@@ -20,8 +20,8 @@ import anyWebsitelogo15 from '../public/Images/AnyWebsite/any website logo_14.sv
 const WorksOn = () => {
     return (
         <>
-            <div className={`container-fluid ${styles.worksContainer} d-flex justify-content-between gap-5 `} style={{ backgroundColor: '#f1f4ff' }}>
-                <div className={`${styles.left} d-flex flex-column gap-3`} style={{ width: '45%' }}>
+            <div className={`container-fluid ${styles.worksContainer} d-flex gap-5 `} style={{ backgroundColor: '#f1f4ff' }}>
+                <div className={`${styles.left} d-flex flex-column gap-3`} >
                     <Image src={logo} alt="" width={130} height={130} />
                     <h1 className={styles.pHeading}>Works on any website. </h1>
                     <p className={`text-muted ${styles.para}`}>Connect SpamBurner™ to any website in seconds and start protecting your business immediately.</p>
@@ -31,7 +31,7 @@ const WorksOn = () => {
 
                     <div className={styles.logoRow}>
 
-                        <Image src={anyWebsitelogo1} className={`img-fluid ${styles.borderImg}`} height={130} width={130} alt="" />
+                        <Image src={anyWebsitelogo1} className={`img-fluid ${styles.borderImg}`}  alt="" />
                         <Image src={anyWebsitelogo2} className={`img-fluid ${styles.borderImg}`} height={130} width={130} alt="" />
                         <Image src={anyWebsitelogo3} className={`img-fluid ${styles.borderImg}`} height={130} width={130} alt="" />
                         <Image src={anyWebsitelogo4} className={`img-fluid ${styles.borderImg}`} height={130} width={130} alt="" />

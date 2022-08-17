@@ -27,7 +27,10 @@ const home = () => {
       </div>
 
       <div className='my-5'>
-        <Slider/>
+        <Slider speed={2000}/>
+      </div>
+      <div className='my-5'>
+        <Slider speed={2500}/>
       </div>
 
       <div className='my-5'>

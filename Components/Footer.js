@@ -10,7 +10,7 @@ const Footer = () => {
         <>
             <div className={`contianer-fluid ${styles.mainContainer}`}>
                 <div className={`container ${styles.innerContainer}`}>
-                    <div className={`${styles.left} w-50`}>
+                    <div className={`${styles.left}`}>
                         <div className={styles.col}>
                             {/* <Image src={whiteText} className={'img-fluid'} width={130} /> */}
                             <span className={styles.heading}>Spamburner™</span>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <span className={styles.heading}>Resources</span>
                             <span className={styles.items} onClick={()=>{router.push('/branding-resources')}}>Enterprise</span>
                             <span className={styles.items} onClick={()=>{router.push('/home')}}>Blog</span>
-                            <span className={styles.items} onClick={()=>{router.push('/home')}}>FAQs</span>
+                            <span className={styles.items} onClick={()=>{router.push('/faqs')}}>FAQs</span>
                             
                         </div>
                         <div className={styles.col}>
@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className={` ${styles.right} w-50`}>
+                    <div className={` ${styles.right}`}>
                         <div className={styles.spanheading}>
                             <span>It's safe. It's easy.</span>
                             <span>It's <span style={{fontSize:'34px'}}>SpamBurner™</span></span>

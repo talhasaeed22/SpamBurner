@@ -1,64 +1,65 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
-export default class AutoPlay extends Component {
-  render() {
+import Image from 'next/future/image'
+import client1 from '../public/Images/Clients Logo/Client logo B2-01.png'
+import client2 from '../public/Images/Clients Logo/Client logo B2-02.png'
+import client3 from '../public/Images/Clients Logo/Client logo B2-03.png'
+import client4 from '../public/Images/Clients Logo/Client logo B2-04.png'
+import client5 from '../public/Images/Clients Logo/Client logo B2-05.png'
+import client6 from '../public/Images/Clients Logo/Client logo B2-06.png'
+import client7 from '../public/Images/Clients Logo/Client logo B2-07.png'
+import client8 from '../public/Images/Clients Logo/Client logo B2-08.png'
+import client9 from '../public/Images/Clients Logo/Client logo B2-09.png'
+import client10 from '../public/Images/Clients Logo/Client logo B2-10.png'
+export default function AutoPlay({speed}){ 
     const settings = {
       infinite: true,
       slidesToShow: 6,
+      slideToScroll:1,
+      swipeToSlide: true,      
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      speed: speed,
+      autoplaySpeed: 0,
       cssEase: "linear",
       pauseOnHover: true,
-      swipeToSlide: true,      
-      afterChange: function(index) {
-        console.log(
-          `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-        );
-      }
+      
     };
     return (
       <div className="container">
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            <Image src={client1} className={'img-fluid'} />
           </div>
           <div>
-            <h3>2</h3>
+          <Image src={client2} className={'img-fluid'} />
           </div>
           <div>
-            <h3>3</h3>
+          <Image src={client3} className={'img-fluid'} />
           </div>
           <div>
-            <h3>4</h3>
+          <Image src={client4} className={'img-fluid'} />
           </div>
           <div>
-            <h3>5</h3>
+          <Image src={client5} className={'img-fluid'} />
           </div>
           <div>
-            <h3>6</h3>
+          <Image src={client6} className={'img-fluid'} />
           </div>
           <div>
-            <h3>1</h3>
+          <Image src={client7} className={'img-fluid'} />
           </div>
           <div>
-            <h3>2</h3>
+          <Image src={client8} className={'img-fluid'} />
           </div>
           <div>
-            <h3>3</h3>
+          <Image src={client9} className={'img-fluid'} />
           </div>
           <div>
-            <h3>4</h3>
+          <Image src={client10} className={'img-fluid'} />
           </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+         
         </Slider>
       </div>
     );
-  }
+  
 }

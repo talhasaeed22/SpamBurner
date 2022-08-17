@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/BlogItem.module.css'
+import styles from '../../styles/BlogItem.module.css'
 
 const BlogItem = ({image, heading, para, date, seen, time}) => {
     return (

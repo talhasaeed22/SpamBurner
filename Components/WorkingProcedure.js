@@ -12,7 +12,7 @@ const WorkingProcedure = () => {
             <div className='text-center mb-5'>
                 <h1 className={styles.pHeading}>How does it work?</h1>
             </div>
-            <div className="container d-flex">
+            <div className={`container d-flex ${styles.procContainer} `}>
                 <div className={styles.workingBox} id={styles.box1}>
                     <div className='d-flex justify-content-between align-items-end'>
                         <h1>01</h1>

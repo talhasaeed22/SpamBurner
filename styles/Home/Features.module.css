@@ -14,3 +14,18 @@
 .featuresItem{
     gap:45px
 }
+@media (max-width:1300px) {
+    .featuresContainer{
+        height: auto;
+        padding: 23px 12px;
+    }
+  }
+  @media (max-width:775px) {
+    .featuresContainer{
+        flex-direction: column;
+    }
+    .featuresItem{
+        flex-direction: column;
+        align-items: center;
+    }
+  }

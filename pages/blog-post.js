@@ -4,7 +4,7 @@ import sample from '../public/Images/bigstock/bigstock-Salesman-In-Red-Shirt-And
 import iconStyles from '../styles/BlogItem.module.css';
 import styles from '../styles/BlogPost.module.css'
 import PreFooter from '../Components/PreFooter';
-import BlogPostCard from '../Components/BlogPostCard';
+import BlogPostCard from '../Components/Blog/BlogPostCard';
 import sample1 from '../public/Images/bigstock/bigstock--207916777.jpg'
 import sample2 from '../public/Images/bigstock/bigstock-Young-woman-using-digital-tabl-294797038.jpg'
 import sample3 from '../public/Images/bigstock/bigstock-Startup-Small-Business-Owner-W-364891720.jpg'

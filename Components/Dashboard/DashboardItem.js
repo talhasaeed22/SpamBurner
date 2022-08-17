@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import React from 'react'
-import styles from '../styles/Dashboard/Dashboard.module.css'
+import styles from '../../styles/Dashboard/Dashboard.module.css'
 const DashboardItem = ({source, heading, para}) => {
   return (
     <>

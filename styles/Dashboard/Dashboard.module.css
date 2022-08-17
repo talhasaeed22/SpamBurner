@@ -68,3 +68,15 @@
     font-weight: 500;
     color: #777385;
 }
+
+.cardsContainer{
+   background-image: radial-gradient(at center center,rgb(241, 244, 255) 0%,white 83%);
+   
+   /* background-color: rgb(241, 244, 255) ; */
+  padding: 23px;
+
+}
+.carditem{
+  background-color: white;
+  border-radius: 12px;
+}

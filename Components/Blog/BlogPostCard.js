@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/future/image'
-import buttonStyles from '../styles/Home/Preview.module.css'
-import styles from '../styles/BlogPost.module.css'
+import buttonStyles from '../../styles/Home/Preview.module.css'
+import styles from '../../styles/BlogPost.module.css'
 
 const BlogPostCard = ({heading, source}) => {
   return (

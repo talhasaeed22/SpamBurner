@@ -31,9 +31,11 @@
 .left{
     display: flex;
     gap: 54px;
+    width: 50%;
 }
 .right{
     display: flex;
+    width: 50%;
     align-items: flex-end;
     flex-direction: column;
     gap: 12px;
@@ -69,4 +71,26 @@
 }
 .poinerSpan{
     cursor: pointer;
+}
+
+@media (max-width:1000px){
+    .innerContainer{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media (max-width:480px){
+    .left{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        align-items: center;
+    }
 }

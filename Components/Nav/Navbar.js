@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/future/image'
-import styles from '../styles/Navbar.module.css'
+import styles from '../../styles/Navbar.module.css'
 import { useRouter } from "next/router";
 
 const Navbar = () => {

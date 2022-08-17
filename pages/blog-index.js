@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogItem from '../Components/BlogItem'
+import BlogItem from '../Components/Blog/BlogItem'
 import style from '../styles/BlogItem.module.css'
 import PreFooter from '../Components/PreFooter'
 

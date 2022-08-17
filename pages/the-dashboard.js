@@ -13,7 +13,7 @@ import goodLeads from '../public/Images/Good Leads.svg'
 import websiteLeads from '../public/Images/Website Leads.svg'
 import SpamLeads from '../public/Images/Spam Leads.svg'
 import source from '../public/Images/Feature 3.png'
-import DashboardItem from '../Components/DashboardItem'
+import DashboardItem from '../Components/Dashboard/DashboardItem'
 import sample from '../public/Images/Dashboard/Save Time _ Money.svg'
 import sample2 from '../public/Images/Dashboard/Simply your life.svg'
 import sample3 from '../public/Images/Dashboard/Built for everyone.svg'
@@ -24,6 +24,15 @@ import screenshot from '../public/Images/Screenshot_5.png'
 import filter from '../public/Images/Screenshot_2.png'
 import userManage from '../public/Images/Screenshot_6.png'
 import beIntelligent from '../public/Images/Screenshot.png'
+import DashboardSlider from '../Components/Dashboard/DashboardSlider'
+import Card from '../Components/Dashboard/Card'
+//Card Images
+import client1 from '../public/Images/Clients Logo/Client logo B2-03.png'
+import client2 from '../public/Images/Clients Logo/Artboard 12.png'
+import client3 from '../public/Images/Clients Logo/DTH Roofing Colored logo.png'
+import client4 from '../public/Images/Clients Logo/Client logo B2-07.png'
+import client5 from '../public/Images/Clients Logo/client logo-03.png'
+
 const dashboard = () => {
   return (
     <>
@@ -102,13 +111,30 @@ const dashboard = () => {
       </div>
 
 
-      <div className='text-center my-2'>
-        <span className={` my-4 fs-1 fw-bold text-dark `} >Loved by 250,000+ companies</span>
+      <div className={` ${styles.cardsContainer} my-2 py-4`}>
+        <div className='text-center my-5'>
+          <span className={` my-4 fs-1 fw-bold text-dark text-center `} >Loved by 250,000+ companies</span>
+        </div>
+        <div className="container-fluid d-flex gap-3">
+          <div>
+            <Card image={client1}/>
+          </div>
+          <div>
+            <Card image={client2}/>
+          </div>
+          <div>
+            <Card image={client3}/>
+          </div>
+          <div>
+            <Card image={client4}/>
+          </div>
+          <div>
+            <Card image={client5}/>
+          </div>
+        </div>
       </div>
 
-      <div className="mt-5">
-        cards
-      </div>
+      
 
       
       <div className='my-5'>

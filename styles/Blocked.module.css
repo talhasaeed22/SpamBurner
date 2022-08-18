@@ -1,0 +1,46 @@
+.mainContainer {
+    position: relative;
+    width: 250px;
+    height: 350px;
+
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.fontContainer img {
+    width: 140px;
+    height: 140px;
+}
+
+
+.fontContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.secondContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+   
+}

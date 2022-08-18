@@ -26,7 +26,7 @@ const FeatureBox = ({ heading, para, points, bgButton, animatedBoxes, source, re
                     {bgButton ? <button className={styles.prevButton}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button> : <button className={`${styles.simpleButton} ${points.length === 0 && 'text-start'} `}>Get Started <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>}
                 </div>
                 <div className={`${styles.right} w-100`}>
-                    <Image className={`img-fluid ${styles.previewImage}`} src={source} alt="" />
+                    <img className={`img-fluid ${styles.previewImage}`} src={source} alt="" />
                     {animatedBoxes && <div className={styles.boxes}>
                         <div className={styles.box} id={styles.box1}>
                             <div className='d-flex align-items-top'>

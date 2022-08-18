@@ -4,34 +4,11 @@ import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
 import Comparison from '../Components/Comparison'
 import PreFooter from '../Components/PreFooter'
-import Footer from '../Components/Footer'
 import buttonStyles from '../styles/Home/Preview.module.css'
 import SpamCounter from '../Components/SpamCounter'
-import Image from 'next/future/image'
-import spanSubmission from '../public/Images/43-Spam-Submission.gif'
-import goodLeads from '../public/Images/Good Leads.svg'
-import websiteLeads from '../public/Images/Website Leads.svg'
-import SpamLeads from '../public/Images/Spam Leads.svg'
-import source from '../public/Images/Feature 3.png'
 import DashboardItem from '../Components/Dashboard/DashboardItem'
-import sample from '../public/Images/Dashboard/Save Time _ Money.svg'
-import sample2 from '../public/Images/Dashboard/Simply your life.svg'
-import sample3 from '../public/Images/Dashboard/Built for everyone.svg'
 import FeatureBox from '../Components/FeatureBox'
-import preview from '../public/Images/Slider_4.png'
-import goodleads from '../public/Images/Screenshot_1.png'
-import screenshot from '../public/Images/Screenshot_5.png'
-import filter from '../public/Images/Screenshot_2.png'
-import userManage from '../public/Images/Screenshot_6.png'
-import beIntelligent from '../public/Images/Screenshot.png'
-import DashboardSlider from '../Components/Dashboard/DashboardSlider'
 import Card from '../Components/Dashboard/Card'
-//Card Images
-import client1 from '../public/Images/Clients Logo/Client logo B2-03.png'
-import client2 from '../public/Images/Clients Logo/Artboard 12.png'
-import client3 from '../public/Images/Clients Logo/DTH Roofing Colored logo.png'
-import client4 from '../public/Images/Clients Logo/Client logo B2-07.png'
-import client5 from '../public/Images/Clients Logo/client logo-03.png'
 
 const dashboard = () => {
   return (
@@ -48,25 +25,25 @@ const dashboard = () => {
 
 
         <div style={{ height: '70vh' }}>
-          <Image className='img-fluid' width={740} src={source} alt="" />
+          <img className='img-fluid' width={740} src={'/Images/Feature 3.png'} alt="" />
           <div className={styles.boxes}>
             <div className={styles.box} id={styles.box1}>
               <div className='d-flex align-items-top'>
-                <Image src={websiteLeads} className="img-fluid me-2" width={25} height={20} alt="" />
+                <img src={'/Images/Website Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
                 <span className='fw-normal' >Website Leads</span>
               </div>
               <span className='fw-bold fs-3 text-black'>1,003</span>
             </div>
             <div className={styles.box} id={styles.box2}>
               <div className='d-flex align-items-top'>
-                <Image src={goodLeads} className="img-fluid me-2" width={25} height={20} alt="" />
+                <img src={'/Images/Good Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
                 <span className='fw-normal' >Good Leads</span>
               </div>
               <span className='fw-bold fs-3 text-black'>3,003</span>
             </div>
             <div className={styles.box} id={styles.box3}>
               <div className='d-flex align-items-top'>
-                <Image src={SpamLeads} className="img-fluid me-2" width={25} height={20} alt="" />
+                <img src={'/Images/Spam Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
                 <span className='fw-normal' >Span Leads</span>
               </div>
               <span className='fw-bold fs-3 text-black'>703</span>
@@ -74,9 +51,9 @@ const dashboard = () => {
           </div>
         </div>
         <div className={`${styles.dashboardContainer}`}>
-          <DashboardItem source={sample} heading={"Save Time & Money"} para="Eliminate time wasted on browing through a cluttered inbox to find your good leads." />
-          <DashboardItem source={sample2} heading={"Simply your life"} para="Manage leads, filter spam and control notifications in one easy to use dashboard." />
-          <DashboardItem source={sample3} heading={"Built for everyone"} para="Our easy-to-use interface and setup is created for even the least tech-savy business owner" />
+          <DashboardItem source={'/Images/Dashboard/Save Time _ Money.svg'} heading={"Save Time & Money"} para="Eliminate time wasted on browing through a cluttered inbox to find your good leads." />
+          <DashboardItem source={'/Images/Dashboard/Simply your life.svg'} heading={"Simply your life"} para="Manage leads, filter spam and control notifications in one easy to use dashboard." />
+          <DashboardItem source={'/Images/Dashboard/Built for everyone.svg'} heading={"Built for everyone"} para="Our easy-to-use interface and setup is created for even the least tech-savy business owner" />
         </div>
       </div>
       <div className='container text-center py-5' style={{ width: '35%' }}>
@@ -87,27 +64,27 @@ const dashboard = () => {
 
       <div className='mt-5'>
 
-        <FeatureBox heading="See all of your leads in one place" para="View your website leads anytime & anywhere With an intuitive, simple dashboard Where everything is in one location" bgButton={false} points={['Connects to any website', 'Instant setup', 'No technical skills']} animatedBoxes={false} source={preview} reverse={false} primaryHeading="THINK SIMPLE" secondPara="" />
+        <FeatureBox heading="See all of your leads in one place" para="View your website leads anytime & anywhere With an intuitive, simple dashboard Where everything is in one location" bgButton={false} points={['Connects to any website', 'Instant setup', 'No technical skills']} animatedBoxes={false} source={'/Images/Slider_4.png'} reverse={false} primaryHeading="THINK SIMPLE" secondPara="" />
       </div>
 
       <div className='mt-5'>
-        <FeatureBox heading="View both good & spam leads separately" para="Don't waste your team's time opening, reading, and managing spam leads that negatively impact your time." bgButton={false} points={[]} animatedBoxes={false} source={goodleads} reverse={true} primaryHeading="THINK SMARTER" secondPara="" />
+        <FeatureBox heading="View both good & spam leads separately" para="Don't waste your team's time opening, reading, and managing spam leads that negatively impact your time." bgButton={false} points={[]} animatedBoxes={false} source={'/Images/Screenshot_1.png'} reverse={true} primaryHeading="THINK SMARTER" secondPara="" />
       </div>
 
       <div className='mt-5'>
-        <FeatureBox heading="Set up notifications to send leads to the right people" para="Easily send leads to the right person with custom notifications set on a form level." bgButton={false} points={[]} animatedBoxes={false} source={screenshot} reverse={false} primaryHeading="BE INVOLVED" secondPara="" />
+        <FeatureBox heading="Set up notifications to send leads to the right people" para="Easily send leads to the right person with custom notifications set on a form level." bgButton={false} points={[]} animatedBoxes={false} source={'/Images/Screenshot_5.png'} reverse={false} primaryHeading="BE INVOLVED" secondPara="" />
       </div>
 
       <div className='mt-5'>
-        <FeatureBox heading="Set filters to avoid seeing the leads you don't want" para="Want to automatically send any website forms with the terms “SEO” or “web design” to the spam category? " secondPara="Use custom filters to prevent unwanted submissions from being seen in your good leads." bgButton={false} points={[]} animatedBoxes={false} source={filter} reverse={true} primaryHeading="BE ORGANIZED" biggerHeading={true} />
+        <FeatureBox heading="Set filters to avoid seeing the leads you don't want" para="Want to automatically send any website forms with the terms “SEO” or “web design” to the spam category? " secondPara="Use custom filters to prevent unwanted submissions from being seen in your good leads." bgButton={false} points={[]} animatedBoxes={false} source={'/Images/Screenshot_2.png'} reverse={true} primaryHeading="BE ORGANIZED" biggerHeading={true} />
       </div>
 
       <div className='mt-5'>
-        <FeatureBox heading="Add users with defined access levels" para="Include any member of your team that needs access to the Lead Dashboard and define their access level." bgButton={false} points={[]} animatedBoxes={false} source={userManage} reverse={false} primaryHeading="BE IN CONTROL" secondPara="" />
+        <FeatureBox heading="Add users with defined access levels" para="Include any member of your team that needs access to the Lead Dashboard and define their access level." bgButton={false} points={[]} animatedBoxes={false} source={'/Images/Screenshot_6.png'} reverse={false} primaryHeading="BE IN CONTROL" secondPara="" />
       </div>
 
       <div className='mt-5'>
-        <FeatureBox heading="See real conversion rates" para="View actual conversion rates that don't take into account spam leads that can skew your data." bgButton={false} points={[]} animatedBoxes={false} source={beIntelligent} reverse={true} primaryHeading="BE INTELLIGENT" />
+        <FeatureBox heading="See real conversion rates" para="View actual conversion rates that don't take into account spam leads that can skew your data." bgButton={false} points={[]} animatedBoxes={false} source={'/Images/Screenshot.png'} reverse={true} primaryHeading="BE INTELLIGENT" />
       </div>
 
 
@@ -117,19 +94,19 @@ const dashboard = () => {
         </div>
         <div className={` ${styles.cardItemsContainer} flex-xxl-row flex-column container-fluid d-flex gap-3`}>
           <div>
-            <Card image={client1}/>
+            <Card image={'/Images/Clients Logo/Client logo B2-03.png'}/>
           </div>
           <div>
-            <Card image={client2}/>
+            <Card image={'/Images/Clients Logo/Artboard 12.png'}/>
           </div>
           <div>
-            <Card image={client3}/>
+            <Card image={'/Images/Clients Logo/DTH Roofing Colored logo.png'}/>
           </div>
           <div>
-            <Card image={client4}/>
+            <Card image={'/Images/Clients Logo/Client logo B2-07.png'}/>
           </div>
           <div>
-            <Card image={client5}/>
+            <Card image={'/Images/Clients Logo/client logo-03.png'}/>
           </div>
         </div>
       </div>
@@ -138,7 +115,7 @@ const dashboard = () => {
 
       
       <div className='my-5'>
-        <SpamCounter pic={spanSubmission} counter={87} para="of small businesses don't manage their leads." second={true}/>
+        <SpamCounter pic={'/Images/43-Spam-Submission.gif'} counter={87} para="of small businesses don't manage their leads." second={true}/>
       </div>
 
       <div className="mt-5">

@@ -1,16 +1,18 @@
-.spanHeading{
+.spanHeading {
   color: #7b7585;
   font-size: 35px;
   font-weight: 800;
   line-height: 1.2em;
   text-align: center;
 }
-.pHeading{
+
+.pHeading {
   font-size: xxx-large;
   font-weight: 700;
   color: black;
 }
-.blockContainer{
+
+.blockContainer {
   /* className=' d-flex gap-5 align-items-center text-black mx-auto p-5 w-50' style={{backgroundColor:'#f1f4ff', borderRadius:'10px'}} */
   background-color: #f1f4ff;
   border-radius: 10px;
@@ -19,16 +21,67 @@
   width: 85%;
   display: flex;
   flex-direction: column;
-  
+
 }
 
-.blockContainer span{
+.blockContainer span {
   font-weight: 500;
   color: #777385;
 }
-@media (max-width:760px){
-  .pHeading{
-    font-size: xx-large;
-    
+
+.dNone {
+  transition: all 0.5s ease;
+  scale: (1.1);
+  
+  display: none;
+  
 }
+
+.secondNone {
+
+  display: none;
+}
+
+.blockedItemContainer img {
+  width: 140px;
+  height: 140px;
+}
+
+.blockedItemContainer {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  background-color: #121331;
+  padding: 23px;
+  color: white;
+  border-radius: 23px;
+  gap: 23px;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+
+.ComparisonContainer {
+  padding: 40px 40px 40px 40px;
+  background: transparent linear-gradient(45deg,#eb1a04 0%,#d81a23 5%,#bc1b51 14%,#a31c79 23%,#8f1d9c 33%,#7e1db8 43%,#711ecd 54%,#681edd 66%,#621ee6 80%,#611fe9 100%) 0% 0% no-repeat;
+  border-radius: 23px;
+  /* background: url('/Images/Screenshot.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+@media (max-width:760px) {
+  .pHeading {
+    font-size: xx-large;
+
+  }
 }

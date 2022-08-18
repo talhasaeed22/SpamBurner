@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Image from 'next/future/image'
 import styles from '../../styles/Navbar.module.css'
 import { useRouter } from "next/router";
 
@@ -36,8 +35,8 @@ const Navbar = () => {
             <nav className={`navbar navbar-expand-lg navbar-light `}>
                 <div className={`container-fluid ${styles.navContainer} ${sticky && styles.sticky} n-parent`} >
                     <a id='logo' className=" d-flex align-items-end navbar-brand" href="/home">
-                        <Image src="/Images/Brand/SpamburnerIcon.svg" alt="" width="25" height="40" className="d-inline-block align-text-top me-2" />
-                        <Image src={(router.pathname === '/the-dashboard' && sticky === false) ? '/Images/Brand/SpamButner White text.svg' : '/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="180" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />
+                        <img src="/Images/Brand/SpamburnerIcon.svg" alt="" width="25" height="40" className="d-inline-block align-text-top me-2" />
+                        <img src={(router.pathname === '/the-dashboard' && sticky === false) ? '/Images/Brand/SpamButner White text.svg' : '/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="180" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />
                         {/* <span className="brandHeading">SpamBurner</span> */}
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

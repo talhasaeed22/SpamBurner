@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from '../styles/PreFooter.module.css'
-import Image from 'next/future/image'
 import buttonStyles from '../styles/Home/Preview.module.css'
-import screenshot from '../public/Images/Screenshot.png'
+
 const PreFooter = ({heading, para, secondaryHeading, secondaryButton, buttonText, lastPara}) => {
   return (
     <>
@@ -22,7 +21,7 @@ const PreFooter = ({heading, para, secondaryHeading, secondaryButton, buttonText
             </div>}
           </div>
           <div className="right w-100">
-            <Image className='img-fluid' src={screenshot} alt="" />
+            <img className='img-fluid' src={'/Images/Screenshot.png'} alt="" />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Footer = () => {
                         <div className={styles.col}>
                             <span className={styles.heading}>Resources</span>
                             <span className={styles.items} onClick={()=>{router.push('/branding-resources')}}>Enterprise</span>
-                            <span className={styles.items} onClick={()=>{router.push('/home')}}>Blog</span>
+                            <span className={styles.items} onClick={()=>{router.push('/blog-index')}}>Blog</span>
                             <span className={styles.items} onClick={()=>{router.push('/faqs')}}>FAQs</span>
                             
                         </div>

@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import slider1 from '../../public/Images/Slider/Slider.png'
-import slider2 from '../../public/Images/Slider/Slider_1.png'
-import slider3 from '../../public/Images/Slider/Slider_2.png'
-import slider4 from '../../public/Images/Slider/Slider_3.png'
-import slider5 from '../../public/Images/Slider/Slider_4.png'
-import slider6 from '../../public/Images/Slider/Slider_5.png'
-import Image from "next/future/image";
-import styles from '../Carousel/Carousel.module.css'
 import Card from "./Card";
 
 function SampleNextArrow(props) {

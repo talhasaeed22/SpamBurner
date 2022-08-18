@@ -1,8 +1,6 @@
 import React from 'react'
 import buttonStyles from '../styles/Home/Preview.module.css'
 import styles from '../styles/branding.module.css'
-import Image from 'next/future/image'
-import whiteLogo from '../public/Images/Branding page/Spamburner White Logo.png'
 import ColourPalette from '../Components/ColourPalette'
 const brandingResources = () => {
     const colorPalette = [{ name: 'Navy Black:', color1: '', gradient:false, color2: '', textColor: 'white', colorCode: '#0D0D2B' }, { name: 'Black:', gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#271D33' }, { name: 'GRAY 04:' , gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#A5A5A5' }, { name: 'GRAY 03:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#D6DBE5' }, { name: 'GRAY 02:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#313539' }, { name: 'WHITE:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#fff' }, { name: 'GRAY 01:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#F7F7F9' }, { name: 'LAVANDER:', color1: '', color2: '', textColor: 'black', colorCode: '#F5EEFF' }, { name: 'PURPLE:', gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#6320EE' }, { name: 'GREEN 1:', gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#23CC94' }, { name: 'RED:', gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#E01E1E' }, { name: 'PINK:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#FCE0E0' }, { name: 'GREEN 2:', gradient:false, color1: '', color2: '', textColor: 'white', colorCode: '#59C961' }, { name: 'GREEN 3:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#E1F9E2' }, { name: 'YELLOW:', gradient:false, color1: '', color2: '', textColor: 'black', colorCode: '#FCEE3D' }, { name: 'GRADIENT 01: ', gradient:true, textColor: 'white', color1: '#6320EE', color2: '#1A104A', colorCode: '#6320EE + #1A104A' }, { name: 'GRADIENT 02:', gradient:true, color1: '#FF6A00', color2: '#FFD436', textColor: 'white', colorCode: '#FF6A00 + #FFD436' }, { name: 'GRADIENT 03:',gradient:true, color1: '#6320EE', color2: '#EB1A04', textColor: 'white', colorCode: '#6320EE + #EB1A04' }, { name: 'GRADIENT 04:',gradient:true, color1: '#6320EE', color2: '#18EDB9', textColor: 'white', colorCode: '#6320EE + #18EDB9' },]
@@ -22,15 +20,15 @@ const brandingResources = () => {
             <div className={`container ${styles.middleSection} py-5 `}>
                 <div className={styles.left}>
                     <div className={styles.leftBorder}>
-                        <Image src="/Images/Brand/SpamburnerIcon.svg" alt="" width="25" height="40" className="d-inline-block align-text-top me-2" />
-                        <Image src="/Images/Brand/SpamButnerBlacktext.svg" alt="" width="180" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />
+                        <img src="/Images/Brand/SpamburnerIcon.svg" alt="" width="25" height="40" className="d-inline-block align-text-top me-2" />
+                        <img src="/Images/Brand/SpamButnerBlacktext.svg" alt="" width="180" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />
                     </div>
                     <h6 className='fw-bold'>Primary Logotype</h6>
                     <span>Use this whenever possible on a white background.</span>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.rightBorder}>
-                        <Image src={whiteLogo} className="img-fluid" />
+                        <img src={'/Images/Branding page/Spamburner White Logo.png'} className="img-fluid" />
                     </div>
                     <h6 className='fw-bold'>Primary Logotype</h6>
                     <span>Use this whenever possible on a dark background.</span>
@@ -44,32 +42,32 @@ const brandingResources = () => {
                 </div>
 
                 <div>
-                    <Image src="/Images/Brand/SpamburnerIcon.svg" alt="" width="100" height="100" className="d-inline-block align-text-top me-2" />
+                    <img src="/Images/Brand/SpamburnerIcon.svg" alt="" width="100" height="100" className="d-inline-block align-text-top me-2" />
                 </div>
 
                 <div className='d-flex gap-5'>
                     <div className='d-flex flex-column gap-3'>
                         <div className={styles.brandingIcons} >
-                            <Image src="/Images/Branding page/Spamburner icon_1.svg" alt="" width="65" height="65" />
+                            <img src="/Images/Branding page/Spamburner icon_1.svg" alt="" width="65" height="65" />
                         </div>
                         <div className={styles.brandingIcons}>
-                            <Image src="/Images/Branding page/Spamburner icon_4.svg" alt="" width="65" height="65" />
-                        </div>
-                    </div>
-                    <div className='d-flex flex-column gap-3'>
-                        <div className={styles.brandingIcons}>
-                            <Image src="/Images/Branding page/Spamburner icon_2.svg" alt="" width="65" height="65" />
-                        </div>
-                        <div className={styles.brandingIcons}>
-                            <Image src="/Images/Branding page/Spamburner icon_5.svg" alt="" width="65" height="65" />
+                            <img src="/Images/Branding page/Spamburner icon_4.svg" alt="" width="65" height="65" />
                         </div>
                     </div>
                     <div className='d-flex flex-column gap-3'>
                         <div className={styles.brandingIcons}>
-                            <Image src="/Images/Branding page/Spamburner icon_3.svg" alt="" width="65" height="65" />
+                            <img src="/Images/Branding page/Spamburner icon_2.svg" alt="" width="65" height="65" />
                         </div>
                         <div className={styles.brandingIcons}>
-                            <Image src="/Images/Branding page/Spamburner icon_6.svg" alt="" width="65" height="65" />
+                            <img src="/Images/Branding page/Spamburner icon_5.svg" alt="" width="65" height="65" />
+                        </div>
+                    </div>
+                    <div className='d-flex flex-column gap-3'>
+                        <div className={styles.brandingIcons}>
+                            <img src="/Images/Branding page/Spamburner icon_3.svg" alt="" width="65" height="65" />
+                        </div>
+                        <div className={styles.brandingIcons}>
+                            <img src="/Images/Branding page/Spamburner icon_6.svg" alt="" width="65" height="65" />
                         </div>
                     </div>
                 </div>

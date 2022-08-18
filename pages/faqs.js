@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import AccordianItem from '../Components/Accordian/AccordianItem';
-// import './accordian.css';
 import styles from '../styles/faqs.module.css'
 const faqs = () => {
     return (

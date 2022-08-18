@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import slider1 from '../../public/Images/Slider/Slider.png'
-import slider2 from '../../public/Images/Slider/Slider_1.png'
-import slider3 from '../../public/Images/Slider/Slider_2.png'
-import slider4 from '../../public/Images/Slider/Slider_3.png'
-import slider5 from '../../public/Images/Slider/Slider_4.png'
-import slider6 from '../../public/Images/Slider/Slider_5.png'
-import Image from "next/future/image";
-import styles from './Carousel.module.css'
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -54,22 +47,22 @@ export default class NewCrosal extends Component {
         <div className="container">
           <Slider {...settings}>
             <div style={{ width: 800 }}>
-                <Image className="img-fluid"  src={slider1} />
+                <img className="img-fluid"  src={'/Images/Slider/Slider.png'} />
             </div>
             <div style={{ width: 800 }}>
-                <Image className="img-fluid"  src={slider2} />
+                <img className="img-fluid"  src={'/Images/Slider/Slider_1.png'} />
             </div>
             <div style={{ width: 800 }}>
-                <Image className="img-fluid"  src={slider3} />
+                <img className="img-fluid"  src={'/Images/Slider/Slider_2.png'} />
             </div>
             <div style={{ width: 800 }}>
-            <Image className="img-fluid"  src={slider4} />
+                <img className="img-fluid"  src={'/Images/Slider/Slider_3.png'} />
             </div>
             <div style={{ width: 800 }}>
-            <Image className="img-fluid"  src={slider5} />
+            <img className="img-fluid"  src={'/Images/Slider/Slider_4.png'} />
             </div>
             <div style={{ width: 800 }}>
-            <Image className="img-fluid"  src={slider6} />
+            <img className="img-fluid"  src={'/Images/Slider/Slider_5.png'} />
             </div>
           </Slider>
         </div>

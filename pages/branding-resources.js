@@ -78,7 +78,7 @@ const brandingResources = () => {
                     <span className={` text-muted fs-6`}>These are the brand colors for Easy Digital Downloads. Copy the HEX codes below.</span>
                 </div>
             </div>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row ">
 
                     {colorPalette.map((color, index) => {

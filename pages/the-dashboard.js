@@ -115,7 +115,7 @@ const dashboard = () => {
 
       
       <div className='my-5'>
-        <SpamCounter pic={'/Images/43-Spam-Submission.gif'} counter={87} para="of small businesses don't manage their leads." second={true}/>
+        <SpamCounter pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true}/>
       </div>
 
       <div className="mt-5">

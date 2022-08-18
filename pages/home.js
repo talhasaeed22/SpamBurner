@@ -29,7 +29,7 @@ const home = () => {
       </div>
 
       <div className='my-5'>
-        <SpamCounter pic={'/Images/43-Spam-Submission.gif'} counter={43} para="of all website submissions are spam"/>
+        <SpamCounter pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam"/>
       </div>
 
       <div className='mt-5'>

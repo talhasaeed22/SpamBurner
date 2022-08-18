@@ -37,7 +37,7 @@ const features = () => {
                 <WorkingProcedure/>
             </div>
 
-            <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara=""/>
+            <PreFooter heading={'Control form spam forever and win.Feel the burn!'} secondaryHeading="" para={""} secondaryButton={false} buttonText="Join SpamBurner™ For Free" lastPara="Then only $14 / mo."/>
         </>
     )
 }

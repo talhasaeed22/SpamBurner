@@ -32,22 +32,14 @@
 .left{
     width: 30%;
     
+    
 }
-.leftBorder{
-    padding: 50px 50px 50px 50px;
-    border: 1px solid #b3b3b3;
-    margin-bottom: 23px;    
-}
+
 
 .right{ 
     width: 30%;
 }
-.rightBorder{
-    background-color: #211a1d;
-    padding: 50px 50px 50px 50px;
-    margin-bottom: 23px;    
 
-}
 
 .iconSection{
     display: flex;

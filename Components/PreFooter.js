@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from '../styles/PreFooter.module.css'
 import buttonStyles from '../styles/Home/Preview.module.css'
+import { useRouter } from "next/router";
 
 const PreFooter = ({heading, para, secondaryHeading, secondaryButton, buttonText, lastPara}) => {
+  const router = useRouter();
   return (
     <>
-      <div className={` ${styles.footercontainer}`} >
+      <div className={` ${styles.footercontainer} ${router.pathname === '/features' ? styles.simpleBg : styles.roundedBg} `} >
         <div className={`container d-flex justify-content-between gap-5 ${styles.footerInner} `}>
           <div className={` ${styles.left} `}>
             {/* <Image src={whitetext} width={250}  /> */}

@@ -6,11 +6,17 @@
 .footercontainer{
     margin-top: 8rem;
     height: 80vh;
-    background-image: url('/Images/CTA Background.png');
+    
     background-repeat: no-repeat;
     background-position: inherit;
     background-size: cover;
     overflow-y: hidden;
+}
+.roundedBg{
+    background-image: url('/Images/CTA Background.png');
+}
+.simpleBg{
+    background-image: url('/Images/BG.png');
 }
 .footerInner{
     padding: 110px 0px;

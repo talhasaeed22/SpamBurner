@@ -83,11 +83,11 @@ const brandingResources = () => {
 
                     {colorPalette.map((color, index) => {
                         return <>
-                        {(index === 0 || index === 5 || index === 10 || index === 15) && <div key={index} className="col-md-1 d-md-block"></div>}
+                        {(index === 0 || index === 5 || index === 10 || index === 15) && <div key={index + Math.random()} className="col-md-1 d-md-block"></div>}
                         <div key={index} className="col-md-2 col-6 p-0">
                             <ColourPalette name={color.name} colorCode={color.colorCode} textColor={color.textColor} color1={color.color1} color2={color.color2} gradient={color.gradient} />
                         </div>
-                        {(index === 4 || index === 9 || index=== 14) && <div key={index} className="col-md-1"></div>}
+                        {(index === 4 || index === 9 || index=== 14) && <div key={index * Math.random()} className="col-md-1"></div>}
                         </>
                     })}
 

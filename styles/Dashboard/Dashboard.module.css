@@ -1,6 +1,5 @@
 .mainContainer{
     background-image: radial-gradient(at center center,#611fe9 0%,#210560 83%);
-    height: 170vh;
     text-align: center;
     padding: 165px 0px;
     display: flex;
@@ -79,6 +78,7 @@
 .carditem{
   background-color: white;
   border-radius: 12px;
+  height: 45vh;
 }
 .cardItemsContainer{
   display: flex;
@@ -90,4 +90,32 @@
     font-size: xx-large;
     
 }
+.carditem{
+  
+  height: auto;
+}
+}
+
+@media (max-width:1324px){
+  .boxes{
+    left: 12%;
+  }
+}
+
+@media (max-width:974px){
+  .boxes{
+    left: 4%;
+    
+  }
+  .boxes span{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width:774px){
+  .boxes{
+    display: none;
+
+  }
 }

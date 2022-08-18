@@ -26,7 +26,7 @@ const dashboard = () => {
 
         <div style={{ height: '70vh' }}>
           <img className='img-fluid' width={740} src={'/Images/Feature 3.png'} alt="" />
-          <div className={styles.boxes}>
+          <div className={styles.boxes} style={{width:'77%'}}>
             <div className={styles.box} id={styles.box1}>
               <div className='d-flex align-items-top'>
                 <img src={'/Images/Website Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />

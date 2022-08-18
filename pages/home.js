@@ -53,9 +53,9 @@ const home = () => {
       </div>
 
       <div className='mt-5'>
-        <div className='d-flex flex-row justify-content-around align-items-center'>
-          <span style={{color: "#6320ee", fontSize: '35px', fontWeight: '800'}}>Without SpamBurner</span>
-          <span style={{ fontSize: '35px', fontWeight: '800'}}>With SpamBurner</span>
+        <div className={`d-flex flex-row justify-content-around align-items-center ${styles.ComparisonMainContainer}`}>
+          <span style={{color: "#6320ee"}}>Without SpamBurner</span>
+          <span style={{ }}>With SpamBurner</span>
         </div>
         <Comparison />
       </div>
@@ -69,7 +69,7 @@ const home = () => {
           <h1 className={styles.pHeading}> Who We Block </h1>
           <span className=''>Our out-of-the-box settings and global spammer blacklist handle 99% </span>
           <span className=''>of all website spam, but custom filters give you maximum flexibility</span>
-          <div className='d-flex justify-content-between my-4'>
+          <div className={`d-flex justify-content-between my-4  `}>
             <Blocked heading={'Solicitors'} image={'/Images/Spammer/Spamer.svg'} para="Tired of seeing dozens of leads a month coming in for web design, marketing, and SEO? Block these keywords with custom filters."/>
             <Blocked heading={'Bots'} image={'/Images/Spammer/Spamer_1.svg'} para="Bots are built to endlessly spam web forms all over the web. Rather than figuring out a complex workaround, our system easily blocks them out."/>
             <Blocked heading={'Scammers'} image={'/Images/Spammer/Spamer_2.svg'} para="From fake kidnappings to credit card scams, we'll prevent all that garbage from hitting your inbox before it even has a chance."/>

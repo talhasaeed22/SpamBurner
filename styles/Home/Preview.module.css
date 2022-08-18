@@ -81,7 +81,7 @@
   @media (max-width:1300px) {
     .prevContainer{
         flex-direction: column;
-        height: 200vh;
+        height: auto;
         width: 100%;
         justify-content: normal;
         padding: 23px 46px;
@@ -95,6 +95,7 @@
     }
     .boxes{
         bottom: 45%;
+        
     }.spanCounter{
         width: 90%;
     }
@@ -103,9 +104,9 @@
   @media(max-width:850px){
     .boxes{
         bottom: 48%;
-    left: -3%;
-    width: 100%;
-    font-size: 10px;
+        left: -3%;
+        width: 100%;
+        font-size: 9px;
 
     }
     .prevContainer{
@@ -118,5 +119,9 @@
     .pHeading{
       font-size: xx-large;
       
+  }
+  .boxes{
+    display: none;
+
   }
   }

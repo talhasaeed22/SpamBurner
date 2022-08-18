@@ -3,6 +3,9 @@
     color:black;
     font-weight: 900;
 }
+.blogPostContainer{
+    width: 50%;
+}
 .blogPostContainer p{
     color: gray;
     font-size: 18px;
@@ -43,5 +46,15 @@
     }
     .blogPostCardContainer{
         width: 100%;
+    }
+  }
+  @media(max-width:830px){
+    .blogPostContainer{
+        width: 70%;
+    }
+  }
+  @media(max-width:360px){
+    .blogPostContainer{
+        width: 90%;
     }
   }

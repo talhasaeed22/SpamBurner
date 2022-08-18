@@ -84,11 +84,16 @@
   display: flex;
   
 }
-
+.headingContainer{
+  width: 35%;
+}
 @media (max-width:760px){
   .pHeading{
     font-size: xx-large;
     
+}
+.headingContainer{
+  width: 75%;
 }
 .carditem{
   
@@ -99,6 +104,8 @@
 @media (max-width:1324px){
   .boxes{
     left: 12%;
+  }.headingContainer{
+    width: 45%;
   }
 }
 
@@ -106,6 +113,9 @@
   .boxes{
     left: 4%;
     
+  }
+  .headingContainer{
+    width: 55%;
   }
   .boxes span{
     font-size: 12px;
@@ -117,5 +127,35 @@
   .boxes{
     display: none;
 
+  }
+  .mainContainer h1{
+   
+    font-size: 36px;
+  }
+  .dashboardContainer{
+    flex-direction: column;
+  }
+  .dashboardItem{
+    width: 90%;
+  }
+}
+@media (max-width:374px){
+  .boxes{
+    display: none;
+
+  }
+  .headingContainer{
+    width: 100%;
+  }
+  .mainContainer h1{
+   
+    font-size: 30px;
+   
+}
+}
+@media (max-width:574px){
+  
+  .headingContainer{
+    width: 100%;
   }
 }

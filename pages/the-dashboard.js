@@ -56,7 +56,7 @@ const dashboard = () => {
           <DashboardItem source={'/Images/Dashboard/Built for everyone.svg'} heading={"Built for everyone"} para="Our easy-to-use interface and setup is created for even the least tech-savy business owner" />
         </div>
       </div>
-      <div className='container text-center py-5' style={{ width: '35%' }}>
+      <div className={` ${styles.headingContainer} container text-center py-5`}>
         <span className={styles.boldSpan}>Included with SpamBurner™</span>
         <h1 className={styles.pHeading}>The lead management tool for any website</h1>
         <span className={styles.boldSpan}>The Dashboard allows for people who need a simple solution to have more control over their website.</span>

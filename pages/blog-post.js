@@ -7,7 +7,7 @@ const blogPost = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-      <div className={`container d-flex flex-column w-50 gap-4 ${styles.blogPostContainer} `}>
+      <div className={`container d-flex flex-column gap-4 ${styles.blogPostContainer} `}>
         <img src={'/Images/bigstock/bigstock-Salesman-In-Red-Shirt-And-Base-281473519.jpg'} className="img-fluid  " />
         <span style={{color:'#6f4ab8', fontSize:'22px'}}>blog article</span>
         <span className={styles.pHeading}>l illum dolore eu feugiat nulla facilisis et accumsan et iusto odio dignissim</span>

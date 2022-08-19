@@ -7,7 +7,7 @@ const howItWorks = () => {
   return (
    <>
     <div className="mt-5">
-        <WorkingProcedure/>
+        <WorkingProcedure loader={true}/>
     </div>
 
     <div className="mt-5">

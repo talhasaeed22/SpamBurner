@@ -58,7 +58,8 @@
   .boxes{
     position: relative;
     bottom: 67%;
-    left: -8%;
+    left: -21%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 24px;

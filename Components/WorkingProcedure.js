@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from '../styles/Home/WorkingProcedure.module.css'
-
-
-const WorkingProcedure = () => {
+import Lottie from 'react-lottie-player'
+import firstLoader from '../public/Animations/First loader.json'
+import secondLoader from '../public/Animations/Second loader.json'
+import horizontalFirstLoader from '../public/Animations/Horizontal first loader.json'
+import horizontalSecondLoader from '../public/Animations/Horizontal Second Loader.json'
+const WorkingProcedure = ({loader}) => {
     return (
         <>
             <div className='text-center mb-5'>
@@ -23,7 +26,13 @@ const WorkingProcedure = () => {
                     </div>
                 </div>
                 <div className={styles.workingBox} id={styles.workingBox2}>
-                    <img src={'/Images/Step.gif'} alt="" width={50} />
+                    {loader && <Lottie
+                        loop={true}
+                        autoPlay={false}
+                        animationData={horizontalFirstLoader}
+                        play
+                        style={{ width: 90, height: 90 }}
+                    />}
                 </div>
                 <div className={styles.workingBox} id={styles.box3}>
                     <div className='d-flex justify-content-between align-items-end'>
@@ -39,7 +48,13 @@ const WorkingProcedure = () => {
                     </div>
                 </div>
                 <div className={styles.workingBox} id={styles.workingBox4}>
-                    <img src={'/Images/Step.gif'} alt="" width={50} />
+                    {loader && <Lottie
+                        loop={true}
+                        autoPlay={false}
+                        animationData={horizontalSecondLoader}
+                        play
+                        style={{ width: 90, height: 90 }}
+                    />}
                 </div>
                 <div className={styles.workingBox} id={styles.box5}>
                     <div className='d-flex justify-content-between align-items-end'>

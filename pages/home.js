@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Home/Home.module.css'
 import FeatureBox from '../Components/FeatureBox'
 import Slider from '../Components/Slider'
@@ -9,7 +9,22 @@ import Comparison from '../Components/Comparison'
 import Features from '../Components/Features'
 import PreFooter from '../Components/PreFooter'
 import Blocked from '../Components/Blocked'
+
 const home = () => {
+  const [loaded, setLoaded] = useState(false)
+  const [dotsloader, setDotsloader] = useState(false)
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 500) {
+            setLoaded(true)
+          }if(window.scrollY > 3500){
+            setDotsloader(true)
+          }
+      })
+    }
+  }, [])
+  
   return (
     <>
       <div className='mt-5'>
@@ -29,7 +44,7 @@ const home = () => {
       </div>
 
       <div className='my-5'>
-        <SpamCounter pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam"/>
+        <SpamCounter pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam" load={loaded}/>
       </div>
 
       <div className='mt-5'>
@@ -45,7 +60,7 @@ const home = () => {
       </div>
 
       <div className="mt-5">
-        <WorkingProcedure/>
+        <WorkingProcedure loader={dotsloader}/>
       </div>
 
       <div className='mt-5'>
@@ -55,7 +70,7 @@ const home = () => {
       <div className='mt-5'>
         <div className={`d-flex flex-row justify-content-around align-items-center ${styles.ComparisonMainContainer}`}>
           <span style={{color: "#6320ee"}}>Without SpamBurner</span>
-          <span style={{ }}>With SpamBurner</span>
+          <span >With SpamBurner</span>
         </div>
         <Comparison />
       </div>

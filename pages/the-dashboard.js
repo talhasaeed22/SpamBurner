@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/Dashboard/Dashboard.module.css'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
@@ -9,8 +9,21 @@ import SpamCounter from '../Components/SpamCounter'
 import DashboardItem from '../Components/Dashboard/DashboardItem'
 import FeatureBox from '../Components/FeatureBox'
 import Card from '../Components/Dashboard/Card'
+import Lottie from 'react-lottie-player'
+import lottieJson from '../public/Animations/good leads.json'
 
 const dashboard = () => {
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 6200) {
+          setLoaded(true)
+        }
+      })
+    }
+  }, [])
+
   return (
     <>
       <div className={styles.mainContainer}>
@@ -20,14 +33,14 @@ const dashboard = () => {
           <span>View all of your leads in one place, 100% secure</span>
           <span>and safe! Trusted by over 24,000 websites.</span>
         </div>
-        <button className={`${buttonStyles.prevButton} mx-auto `} style={{ width: 'fit-content' }}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+        <button className={`${buttonStyles.prevButton} mx-auto `} style={{ width: 'fit-content', cursor:'pointer' }}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
         <p className='my-2 text-light'>Then only $14 / mo.</p>
 
 
         <div style={{ height: '70vh' }}>
           <img className='img-fluid' width={740} src={'/Images/Feature 3.png'} alt="" />
-          <div className={styles.boxes} style={{width:'77%'}}>
-            <div className={styles.box} id={styles.box1}>
+          <div className={styles.boxes}>
+            {/* <div className={styles.box} id={styles.box1}>
               <div className='d-flex align-items-top'>
                 <img src={'/Images/Website Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
                 <span className='fw-normal' >Website Leads</span>
@@ -47,7 +60,14 @@ const dashboard = () => {
                 <span className='fw-normal' >Span Leads</span>
               </div>
               <span className='fw-bold fs-3 text-black'>703</span>
-            </div>
+            </div> */}
+            <Lottie
+              loop={false}
+              autoPlay={false}
+              animationData={lottieJson}
+              play
+              style={{ width: 350, height: 350 }}
+            />
           </div>
         </div>
         <div className={`${styles.dashboardContainer}`}>
@@ -94,32 +114,32 @@ const dashboard = () => {
         </div>
         <div className={` ${styles.cardItemsContainer} flex-xxl-row flex-column container-fluid d-flex gap-3`}>
           <div>
-            <Card image={'/Images/Clients Logo/Client logo B2-03.png'}/>
+            <Card image={'/Images/Clients Logo/Client logo B2-03.png'} />
           </div>
           <div>
-            <Card image={'/Images/Clients Logo/Artboard 12.png'}/>
+            <Card image={'/Images/Clients Logo/Artboard 12.png'} />
           </div>
           <div>
-            <Card image={'/Images/Clients Logo/DTH Roofing Colored logo.png'}/>
+            <Card image={'/Images/Clients Logo/DTH Roofing Colored logo.png'} />
           </div>
           <div>
-            <Card image={'/Images/Clients Logo/Client logo B2-07.png'}/>
+            <Card image={'/Images/Clients Logo/Client logo B2-07.png'} />
           </div>
           <div>
-            <Card image={'/Images/Clients Logo/client logo-03.png'}/>
+            <Card image={'/Images/Clients Logo/client logo-03.png'} />
           </div>
         </div>
       </div>
 
-      
 
-      
+
+
       <div className='my-5'>
-        <SpamCounter pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true}/>
+        <SpamCounter pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true} load={loaded} />
       </div>
 
       <div className="mt-5">
-        <WorkingProcedure/>
+        <WorkingProcedure />
       </div>
 
       <div className='mt-5'>
@@ -127,10 +147,10 @@ const dashboard = () => {
       </div>
 
       <div className='mt-5'>
-        <WorksOn/>
+        <WorksOn />
       </div>
 
-      <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara=""/>
+      <PreFooter heading={'SpamBurner™'} secondaryHeading="The only comprehensive solution for eliminating website spam." para={"Easy setup - no technical skills required or hidden costs"} secondaryButton={true} buttonText="Start My Free Trial Now" lastPara="" />
     </>
   )
 }

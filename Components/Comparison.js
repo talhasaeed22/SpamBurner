@@ -12,7 +12,7 @@ const Comparison = () => {
       sliderLineColor={'black'} 
       sliderLineWidth={4} 
       rightImage="/Images/Comparison/With Spamburner.jpg" 
-      
+
       leftImage="/Images/Comparison/Before Spamburner.jpg" />
       </div>
     </div>

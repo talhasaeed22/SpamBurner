@@ -6,7 +6,6 @@ const BlogItem = ({image, heading, para, date, seen, time}) => {
         <>
             <div className={`${styles.blogContainer} container`}>
                 <div className={styles.left} style={{backgroundImage:`url(${image})`}}>
-                    {/* <Image src={sample} className='img-fluid' /> */}
                 </div>
                 <div className={`${styles.right} w-100`}>
                     <div className="d-flex flex-column py-3 ">

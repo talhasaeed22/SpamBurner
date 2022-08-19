@@ -44,8 +44,8 @@ const MobileNav = () => {
           <img src={(router.pathname === '/the-dashboard' && sticky === false) ? '/Images/Brand/SpamButner White text.svg' : '/Images/Brand/SpamButnerBlacktext.svg'} alt="" width="140" height={40} className="d-inline-block align-text-top me-2 mb-lg-0" />
         </div>
         <div onClick={() => { setShowModal(true) }} className='d-flex gap-3 align-items-center fs-6 fw-bold'>
-          <span className={router.pathname === '/the-dashboard' && 'text-white' }>MENU</span>
-          <i className={`fa fa-bars fs-4 ${router.pathname === '/the-dashboard' && 'text-white'} `} aria-hidden="true"></i>
+          <span className={router.pathname === '/the-dashboard' ? 'text-white' : '' }>MENU</span>
+          <i className={`fa fa-bars fs-4 ${router.pathname === '/the-dashboard' ? 'text-white' : ''} `} aria-hidden="true"></i>
         </div>
       </div>
 

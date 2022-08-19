@@ -12,7 +12,6 @@ const Footer = () => {
                 <div className={`container ${styles.innerContainer}`}>
                     <div className={`${styles.left}`}>
                         <div className={styles.col}>
-                            {/* <Image src={whiteText} className={'img-fluid'} width={130} /> */}
                             <span className={styles.heading}>Spamburner™</span>
                             <span className={styles.items} onClick={()=>{router.push('/home')}}>Home</span>
                             <span className={styles.items} onClick={()=>{router.push('/the-dashboard')}}>The Dashboard</span>

@@ -10,7 +10,6 @@ const PreFooter = ({heading, para, secondaryHeading, secondaryButton, buttonText
       <div className={` ${styles.footercontainer} ${router.pathname === '/features' ? styles.simpleBg : styles.roundedBg} `} >
         <div className={`container d-flex justify-content-between gap-5 ${styles.footerInner} `}>
           <div className={` ${styles.left} `}>
-            {/* <Image src={whitetext} width={250}  /> */}
             <h1 className={styles.heading}>{heading}</h1>
             {secondaryHeading !== '' && <h2>{secondaryHeading}</h2>}
             <span >{para}</span>

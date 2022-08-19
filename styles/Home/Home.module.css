@@ -80,10 +80,6 @@
   padding: 40px 40px 40px 40px;
   background: transparent linear-gradient(45deg,#eb1a04 0%,#d81a23 5%,#bc1b51 14%,#a31c79 23%,#8f1d9c 33%,#7e1db8 43%,#711ecd 54%,#681edd 66%,#621ee6 80%,#611fe9 100%) 0% 0% no-repeat;
   border-radius: 23px;
-  /* background: url('/Images/Screenshot.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 .ComparisonMainContainer span{
   font-size: 25px;

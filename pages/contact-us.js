@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Contact.module.css'
 import buttonStyles from '../styles/Home/Preview.module.css'
 import iconStyles from '../styles/Footer.module.css'
-const contact = () => {
+const Contact = () => {
   return (
     <>
       <div className={`container-fluid ${styles.contactContainer} `}>
@@ -85,4 +85,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

@@ -37,8 +37,8 @@ const Footer = () => {
 
                     <div className={` ${styles.right}`}>
                         <div className={styles.spanheading}>
-                            <span>It's safe. It's easy.</span>
-                            <span>It's <span style={{fontSize:'34px'}}>SpamBurner™</span></span>
+                            <span>It&apos;s safe. It&apos;s easy.</span>
+                            <span>It&apos;s <span style={{fontSize:'34px'}}>SpamBurner™</span></span>
                         </div>
                         <button className={`${buttonStyles.prevButton} w-auto`}>Start My Free Trial Now <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                         <div className={styles.icons}>

@@ -13,7 +13,7 @@ import Lottie from 'react-lottie-player'
 import lottieJson from '../public/Animations/good leads.json'
 import lottieJson1 from '../public/Animations/Business lead.json'
 
-const dashboard = () => {
+const Dashboard = () => {
   const [loaded, setLoaded] = useState(false)
   useEffect(() => {
     if (typeof window !== undefined) {
@@ -119,7 +119,7 @@ const dashboard = () => {
 
 
       <div className='my-5'>
-        <SpamCounter json={lottieJson1} pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true} load={loaded} />
+        <SpamCounter counterLoad={loaded} json={lottieJson1} pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true} load={loaded} />
       </div>
 
       <div className="mt-5">
@@ -139,4 +139,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard

@@ -3,7 +3,7 @@ import iconStyles from '../styles/BlogItem.module.css';
 import styles from '../styles/BlogPost.module.css'
 import PreFooter from '../Components/PreFooter';
 import BlogPostCard from '../Components/Blog/BlogPostCard';
-const blogPost = () => {
+const BlogPost = () => {
   return (
     <>
       <div className={styles.mainContainer}>
@@ -54,4 +54,4 @@ const blogPost = () => {
   )
 }
 
-export default blogPost
+export default BlogPost

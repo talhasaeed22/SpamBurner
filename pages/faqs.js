@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AccordianItem from '../Components/Accordian/AccordianItem';
 import styles from '../styles/faqs.module.css'
-const faqs = () => {
+const Faqs = () => {
     return (
         <>
             <div className="container my-5 d-flex flex-column gap-3 text-center">
@@ -33,4 +33,4 @@ const faqs = () => {
     )
 }
 
-export default faqs
+export default Faqs

@@ -3,7 +3,7 @@ import PreFooter from '../Components/PreFooter'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
 
-const howItWorks = () => {
+const HowItWorks = () => {
   return (
    <>
     <div className="mt-5">
@@ -23,4 +23,4 @@ const howItWorks = () => {
   )
 }
 
-export default howItWorks
+export default HowItWorks

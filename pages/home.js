@@ -11,7 +11,7 @@ import PreFooter from '../Components/PreFooter'
 import Blocked from '../Components/Blocked'
 import lottieJson from '../public/Animations/Website submission spam.json'
 
-const home = () => {
+const Home = () => {
   const [loaded, setLoaded] = useState(false)
   const [dotsloader, setDotsloader] = useState(false)
   useEffect(() => {
@@ -45,7 +45,7 @@ const home = () => {
       </div>
 
       <div className='my-5'>
-        <SpamCounter json={lottieJson} pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam" load={loaded}/>
+        <SpamCounter counterLoad={loaded} json={lottieJson} pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam" load={loaded}/>
       </div>
 
       <div className='mt-5'>
@@ -100,5 +100,5 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
 

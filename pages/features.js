@@ -6,14 +6,14 @@ import PreFooter from '../Components/PreFooter'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import NewCrosal from '../Components/Carousel/NewCrosal'
 import styles from '../styles/Home/Features.module.css'
-const features = () => {
+const Feature = () => {
     return (
         <>
             <div className={`container text-center py-5 ${styles.featurePageContainer} `} >
 
                 <h1 className={headingStyles.pHeading}>A powerful tool to control your website submissions.</h1>
                 <div style={{ margin: 'auto', width: '65%' }}>
-                    <span className={headingStyles.boldSpan}>There's finally a solution for unwanted messages and notifications, and you can start using it today.</span>
+                    <span className={headingStyles.boldSpan}>There&apos;s finally a solution for unwanted messages and notifications, and you can start using it today.</span>
                 </div>
             </div>
 
@@ -42,4 +42,4 @@ const features = () => {
     )
 }
 
-export default features
+export default Feature

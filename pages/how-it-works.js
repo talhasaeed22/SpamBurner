@@ -2,10 +2,15 @@ import React from 'react'
 import PreFooter from '../Components/PreFooter'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
+import Head from "next-head"
 
 const HowItWorks = () => {
   return (
    <>
+   <Head>
+        <title>How it Works</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
     <div className="mt-5">
         <WorkingProcedure loader={true}/>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 import styles from '../styles/Dashboard/Dashboard.module.css'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
@@ -27,6 +28,10 @@ const Dashboard = () => {
 
   return (
     <>
+    <Head>
+        <title>Dashboard</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={styles.mainContainer}>
         <div className={styles.primaryHeadingContainer}>
           <h1>Manage Your Website Leads in a Simple, Intuitive Dashboard</h1>
@@ -45,7 +50,7 @@ const Dashboard = () => {
           <div className={styles.boxes}>
             <div className={styles.lottie}>
               <Lottie
-                loop={true}
+                loop={false}
                 autoPlay={false}
                 animationData={lottieJson}
                 play

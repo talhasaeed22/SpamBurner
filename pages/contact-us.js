@@ -2,9 +2,14 @@ import React from 'react'
 import styles from '../styles/Contact.module.css'
 import buttonStyles from '../styles/Home/Preview.module.css'
 import iconStyles from '../styles/Footer.module.css'
+import Head from 'next/head'
 const Contact = () => {
   return (
     <>
+    <Head>
+        <title>FAQs</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={`container-fluid ${styles.contactContainer} `}>
         <div className={styles.left}>
           <h1 className={styles.pHeading}>Contact Us</h1>

@@ -15,7 +15,7 @@ export default function AutoPlay({ speed }) {
 
   };
   return (
-    <div className="container">
+    <div className="container" style={{filter: 'grayscale(1)'}}>
       <Slider {...settings}>
         <div >
           <img src={'/Images/Clients Logo/Client logo B2-01.png'} className={'img-fluid'} width={130} height={130} />

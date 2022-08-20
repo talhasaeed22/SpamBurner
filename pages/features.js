@@ -34,7 +34,7 @@ const Feature = () => {
             </div>
 
             <div className="mt-5">
-                <WorkingProcedure/>
+                <WorkingProcedure loader={true}/>
             </div>
 
             <PreFooter heading={'Control form spam forever and win.Feel the burn!'} secondaryHeading="" para={""} secondaryButton={false} buttonText="Join SpamBurner™ For Free" lastPara="Then only $14 / mo."/>

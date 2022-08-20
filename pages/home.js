@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
 import styles from '../styles/Home/Home.module.css'
 import FeatureBox from '../Components/FeatureBox'
 import Slider from '../Components/Slider'
@@ -28,6 +29,10 @@ const Home = () => {
   
   return (
     <>
+      <Head>
+        <title>Spamburner - Home</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className='mt-5'>
         
         <FeatureBox heading="Say Goodbye to Website Spam Forever" para="Focus on real customers by cutting out spam website submissions for good and manage your leads in one dashboard." bgButton={true} points={[]} animatedBoxes={true} source={'/Images/Feature2.png'} reverse={false} primaryHeading="" secondPara="" />

@@ -13,7 +13,7 @@ const PreFooter = ({heading, para, secondaryHeading, secondaryButton, buttonText
             <h1 className={styles.heading}>{heading}</h1>
             {secondaryHeading !== '' && <h2>{secondaryHeading}</h2>}
             <span >{para}</span>
-            <div className='d-flex gap-4 mt-4'>
+            <div className='d-flex flex-sm-row flex-column gap-4 mt-4'>
               <button className={buttonStyles.prevButton}>{buttonText} <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
               {secondaryButton && <button className={`${buttonStyles.simpleButton} text-light `}>See Pricing <i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>}
             </div>

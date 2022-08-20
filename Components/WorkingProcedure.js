@@ -26,13 +26,26 @@ const WorkingProcedure = ({loader}) => {
                     </div>
                 </div>
                 <div className={styles.workingBox} id={styles.workingBox2}>
-                    {loader && <Lottie
-                        loop={true}
-                        autoPlay={false}
-                        animationData={horizontalFirstLoader}
-                        play
-                        style={{ width: 90, height: 90 }}
-                    />}
+                    {loader && <>
+                        <div className="d-xl-block d-none">
+                            <Lottie
+                            loop={true}
+                            autoPlay={false}
+                            animationData={horizontalFirstLoader}
+                            play
+                            style={{ width: 90, height: 90 }}
+                        />
+                        </div>
+                        <div className='d-xl-none d-block'>
+                        <Lottie
+                            loop={true}
+                            autoPlay={false}
+                            animationData={firstLoader}
+                            play
+                            style={{ width: 90, height: 90 }}
+                        />
+                        </div>
+                    </>}
                 </div>
                 <div className={styles.workingBox} id={styles.box3}>
                     <div className='d-flex justify-content-between align-items-end'>
@@ -48,13 +61,26 @@ const WorkingProcedure = ({loader}) => {
                     </div>
                 </div>
                 <div className={styles.workingBox} id={styles.workingBox4}>
-                    {loader && <Lottie
-                        loop={true}
-                        autoPlay={false}
-                        animationData={horizontalSecondLoader}
-                        play
-                        style={{ width: 90, height: 90 }}
-                    />}
+                    {loader && <>
+                        <div className="d-xl-block d-none">
+                            <Lottie
+                            loop={true}
+                            autoPlay={false}
+                            animationData={horizontalSecondLoader}
+                            play
+                            style={{ width: 90, height: 90 }}
+                        />
+                        </div>
+                        <div className='d-xl-none d-block'>
+                        <Lottie
+                            loop={true}
+                            autoPlay={false}
+                            animationData={secondLoader}
+                            play
+                            style={{ width: 90, height: 90 }}
+                        />
+                        </div>
+                    </>}
                 </div>
                 <div className={styles.workingBox} id={styles.box5}>
                     <div className='d-flex justify-content-between align-items-end'>

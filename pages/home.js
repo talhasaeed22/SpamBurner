@@ -9,6 +9,7 @@ import Comparison from '../Components/Comparison'
 import Features from '../Components/Features'
 import PreFooter from '../Components/PreFooter'
 import Blocked from '../Components/Blocked'
+import lottieJson from '../public/Animations/Website submission spam.json'
 
 const home = () => {
   const [loaded, setLoaded] = useState(false)
@@ -44,7 +45,7 @@ const home = () => {
       </div>
 
       <div className='my-5'>
-        <SpamCounter pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam" load={loaded}/>
+        <SpamCounter json={lottieJson} pic={'/Images/small business 87.png'} counter={43} para="of all website submissions are spam" load={loaded}/>
       </div>
 
       <div className='mt-5'>

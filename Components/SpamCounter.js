@@ -2,16 +2,15 @@ import React, { useState } from 'react'
 import styles from '../styles/Home/Preview.module.css'
 import CountUp from 'react-countup';
 import Lottie from 'react-lottie-player'
-import lottieJson from '../public/Animations/Business lead.json'
 
-const SpamCounter = ({ counter, pic, para, second, load }) => {
+const SpamCounter = ({ counter, pic, para, second, load, json }) => {
   return (
     <>
       <div onFocusCapture={()=>{setLoaded(true)}} className={` ${styles.spanCounter} d-flex gap-5 align-items-center text-black mx-auto p-5 `} style={{ backgroundColor: '#f1f4ff', borderRadius: '10px', }}>
         {load && <Lottie
           loop={false}
           autoPlay={false}
-          animationData={lottieJson}
+          animationData={json}
           play
           style={{ width: 150, height: 150 }}
         />}

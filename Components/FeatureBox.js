@@ -47,13 +47,15 @@ const FeatureBox = ({ heading, para, points, bgButton, animatedBoxes, source, re
                             </div>
                             <span className='fw-bold fs-xl-3 fs-md-3 fs-sm-5 text-black'>703</span>
                         </div> */}
-                        <Lottie
-                            loop={false}
-                            autoPlay={false}
-                            animationData={lottieJson}
-                            play
-                            style={{ width: 350, height: 350 }}
-                        />
+                        <div className={styles.Lottie}>
+                            <Lottie
+                                loop={false}
+                                autoPlay={false}
+                                animationData={lottieJson}
+                                play
+                                
+                            />
+                        </div>
                     </div>}
                 </div>
             </div>

@@ -9,7 +9,7 @@ const WorksOn = () => {
                     <img src={'/Images/Brand/SpamburnerIcon.svg'} alt="" width={130} height={130} />
                     <h1 className={styles.pHeading}>Works on any website. </h1>
                     <p className={`text-muted ${styles.para}`}>Connect SpamBurner™ to any website in seconds and start protecting your business immediately.</p>
-                    <button className={`${styles.simpleButton} w-75 text-start p-0`}>Connect My Website<i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                    <button className={`${styles.simpleButton} ${styles.simpleBtn} w-75 text-start p-0`}>Connect My Website<i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                 </div>
                 <div className={`${styles.logosContainer} w-100`}>
 

@@ -78,6 +78,16 @@
   .spanCounter{
     width:55%
   }
+  .Lottie{
+    width: 350px;
+    height: 350px;
+  }
+
+  @media(max-height:1431px){
+    .left{
+      padding: 12px;
+    }
+  }
 
   @media (max-width:1300px) {
     .prevContainer{
@@ -87,6 +97,14 @@
         justify-content: normal;
         padding: 23px 46px;
     }
+    .prevButton{
+      width: 50%;
+    }
+    .simpleButton{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .left{
         width: 100%;
         align-items: center;
@@ -95,40 +113,64 @@
         align-items: center;
     }
     .boxes{
-        bottom: 45%;
+      bottom: 470px;
+      left: -9%;
         
     }.spanCounter{
         width: 90%;
     }
   }
+  @media(max-width:989px){
+    .left{
+      text-align: center;
+    }
+  }
+  
 
   @media(max-width:850px){
     .boxes{
-        bottom: 48%;
-        left: -3%;
+        
         width: 100%;
-        font-size: 9px;
+        left: -7%;
+        bottom: 102px;
 
     }
+    .Lottie{
+      width: 150px;
+      height: 150px;
+    }
     .prevContainer{
-        padding: 23px 26px;
+        padding: 0px 14px;
     }.spanCounter{
         flex-direction: column;
     }
   }
   @media (max-width:760px){
     .pHeading{
-      font-size: xx-large;
-      
-  }
-  .boxes{
-    display: none;
-
-  }
+      font-size: 38px;   
+      font-weight: 700;
+    }
+    .prevButton{
+      width: 80%;
+    }
   }
 
   @media (max-width:450px){
     .prevButton{
       width: 100%;
+    }
+    .simpleButton{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .boxes{
+      left: -15%;
+    }
+    .prevButton{
+      width: 100%;
+    }.pHeading{
+      font-size: xx-large;   
     }
   }

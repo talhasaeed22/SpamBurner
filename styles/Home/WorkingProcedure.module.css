@@ -59,13 +59,23 @@
     font-weight: 700;
     color: black;
 }
-@media (max-width:1300px) {
+@media (max-width:1200px) {
     .procContainer{
         flex-direction: column;
 
     }
     #workingBox2, #workingBox4{
         width: 10%;
+        margin: auto;
+        border-radius: 0;
+    }
+  }
+
+  @media(max-width:991px){
+    #workingBox2, #workingBox4{
+        width: 30%;
+        display: flex;
+        align-items: center;
         margin: auto;
         border-radius: 0;
     }

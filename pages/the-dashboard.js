@@ -11,6 +11,7 @@ import FeatureBox from '../Components/FeatureBox'
 import Card from '../Components/Dashboard/Card'
 import Lottie from 'react-lottie-player'
 import lottieJson from '../public/Animations/good leads.json'
+import lottieJson1 from '../public/Animations/Business lead.json'
 
 const dashboard = () => {
   const [loaded, setLoaded] = useState(false)
@@ -27,8 +28,10 @@ const dashboard = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-        <h1>Manage Your Website Leads</h1>
-        <h1>in a Simple, Intuitive Dashboard</h1>
+        <div className={styles.primaryHeadingContainer}>
+          <h1>Manage Your Website Leads in a Simple, Intuitive Dashboard</h1>
+        </div>
+        
         <div className={` my-4 ${styles.headingSpan}`}>
           <span>View all of your leads in one place, 100% secure</span>
           <span>and safe! Trusted by over 24,000 websites.</span>
@@ -37,37 +40,18 @@ const dashboard = () => {
         <p className='my-2 text-light'>Then only $14 / mo.</p>
 
 
-        <div style={{ height: '70vh' }}>
+        <div className={styles.imgHeight} >
           <img className='img-fluid' width={740} src={'/Images/Feature 3.png'} alt="" />
           <div className={styles.boxes}>
-            {/* <div className={styles.box} id={styles.box1}>
-              <div className='d-flex align-items-top'>
-                <img src={'/Images/Website Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
-                <span className='fw-normal' >Website Leads</span>
-              </div>
-              <span className='fw-bold fs-3 text-black'>1,003</span>
+            <div className={styles.lottie}>
+              <Lottie
+                loop={true}
+                autoPlay={false}
+                animationData={lottieJson}
+                play
+                
+              />
             </div>
-            <div className={styles.box} id={styles.box2}>
-              <div className='d-flex align-items-top'>
-                <img src={'/Images/Good Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
-                <span className='fw-normal' >Good Leads</span>
-              </div>
-              <span className='fw-bold fs-3 text-black'>3,003</span>
-            </div>
-            <div className={styles.box} id={styles.box3}>
-              <div className='d-flex align-items-top'>
-                <img src={'/Images/Spam Leads.svg'} className="img-fluid me-2" width={25} height={20} alt="" />
-                <span className='fw-normal' >Span Leads</span>
-              </div>
-              <span className='fw-bold fs-3 text-black'>703</span>
-            </div> */}
-            <Lottie
-              loop={false}
-              autoPlay={false}
-              animationData={lottieJson}
-              play
-              style={{ width: 350, height: 350 }}
-            />
           </div>
         </div>
         <div className={`${styles.dashboardContainer}`}>
@@ -135,11 +119,11 @@ const dashboard = () => {
 
 
       <div className='my-5'>
-        <SpamCounter pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true} load={loaded} />
+        <SpamCounter json={lottieJson1} pic={'/Images/small business 87.png'} counter={87} para="of small businesses don't manage their leads." second={true} load={loaded} />
       </div>
 
       <div className="mt-5">
-        <WorkingProcedure />
+        <WorkingProcedure loader={true} />
       </div>
 
       <div className='mt-5'>

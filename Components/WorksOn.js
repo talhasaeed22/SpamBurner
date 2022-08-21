@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Styles/Home/WorksOn.module.css'
+import styles from '../styles/Home/WorksOn.module.css'
 import { motion } from "framer-motion"
 const WorksOn = () => {
     return (

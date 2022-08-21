@@ -2,7 +2,8 @@ import React from 'react'
 import PreFooter from '../Components/PreFooter'
 import WorkingProcedure from '../Components/WorkingProcedure'
 import WorksOn from '../Components/WorksOn'
-import Head from "next-head"
+import Head from "next/head"
+
 
 const HowItWorks = () => {
   return (
